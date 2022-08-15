@@ -192,6 +192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolRoute: []
   targetDestination: {fileID: 0}
+  walkSpeed: 6
+  runSpeed: 12
 --- !u!114 &-641415348616738467
 MonoBehaviour:
   m_ObjectHideFlags: 0
