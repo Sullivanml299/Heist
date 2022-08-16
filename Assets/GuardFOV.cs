@@ -10,6 +10,7 @@ public class GuardFOV : MonoBehaviour
     public float ViewDistance = 50f;
     public float meshHeight = 0.5f;
     public Transform guardTransform;
+    public MoveTo guard;
     public LayerMask layerMask;
 
     Vector3 origin;
@@ -19,6 +20,7 @@ public class GuardFOV : MonoBehaviour
     Vector2[] uv;
     int[] triangles;
     Mesh mesh;
+    bool isServer;
     
 
     // Start is called before the first frame update
@@ -27,11 +29,16 @@ public class GuardFOV : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         GetComponent<MeshCollider>().sharedMesh = mesh;
+        // isServer = guard.GetComponent<GuardNetworkBehaviour>().isServer;
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        
         float angle = GetAngleFromVector(guardTransform.forward)+fov/2;//offset the angel to center 
         angleIncrease = fov/rayCount;
         vertices = new Vector3[rayCount+1+1];
@@ -50,12 +57,16 @@ public class GuardFOV : MonoBehaviour
             Physics.Raycast(origin, GetVectorFromAngle(angle), out raycastHit, ViewDistance, layerMask);
             Debug.DrawRay(origin, GetVectorFromAngle(angle)* ViewDistance, Color.cyan);
 
-
+            // print(raycastHit.collider);
             if(raycastHit.collider == null){
                 vertex = origin + GetVectorFromAngle(angle) * ViewDistance;
             }
-            else{
+            else {
                 vertex = raycastHit.point;
+                if (checkAlert(raycastHit.collider.gameObject) && guard != null) { //TODO: clean the null part up
+                    // print(guard);
+                    guard.Alert(raycastHit.collider.gameObject);
+                }
             }
 
             vertices[vertexIndex] = vertex;
@@ -81,6 +92,13 @@ public class GuardFOV : MonoBehaviour
     
     void setOrigin(Vector3 newOrigin){
         origin = newOrigin;
+    }
+
+    bool checkAlert(GameObject obj){
+        // print(obj.tag);
+
+        if(obj.tag == "Player") return true;
+        return false;
     }
 
     Vector3 GetVectorFromAngle(float angle){

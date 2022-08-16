@@ -5,7 +5,7 @@ using Mirror;
 
 public class GuardNetworkBehaviour : NetworkBehaviour
 {
-
+    public MoveTo guard;
     public override void OnStartClient()
     {
         base.OnStartClient();
@@ -14,4 +14,9 @@ public class GuardNetworkBehaviour : NetworkBehaviour
             Destroy(GetComponent<GuardAnimationHelper>());
         }
     }
+
+    // [Command(requiresAuthority = false)]
+    // public void CmdCaught(){
+    //     guard.Caught();
+    // }
 }
