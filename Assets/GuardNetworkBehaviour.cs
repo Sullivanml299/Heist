@@ -20,6 +20,7 @@ public class GuardNetworkBehaviour : NetworkBehaviour
         identity.RemoveClientAuthority();
         identity.AssignClientAuthority(conn);
         currentAuthority = conn;
+
         networkTransform.CancelInvoke();
         networkTransform.Reset();
     }
@@ -30,6 +31,7 @@ public class GuardNetworkBehaviour : NetworkBehaviour
         identity.RemoveClientAuthority();
         identity.AssignClientAuthority(conn);
         currentAuthority = conn;
+
         networkTransform.CancelInvoke();
         networkTransform.Reset();
     }
@@ -61,49 +63,10 @@ public class GuardNetworkBehaviour : NetworkBehaviour
         if(isServer) updateControl();
     }
 
-    // public override void OnStartClient()
-    // {
-    //     base.OnStartClient();
-    //     // if(!isServer){
-    //     //     // GetComponent<MoveTo>().enabled = false;
-    //     //     // GetComponent<GuardAnimationHelper>().enabled = false;
-    //     //     // this.enabled = false;
-    //     //     // Destroy(GetComponent<MoveTo>());
-    //     //     // Destroy(GetComponent<GuardAnimationHelper>());
-    //     // }
-    // }
-
     void updateControl(){
-        if(!guard.isPatrolling()) return; //Don't update state if the guard is chasing
-        // print("Update");
-        // print(connections.Count);
-        float minDistance = Mathf.Infinity;
-        float _distance = Mathf.Infinity;
-        NetworkConnectionToClient newAuthority= null;
-        if(isServer){
-            foreach(NetworkConnectionToClient client in connections.Values){
-                _distance = getDistanceToClient(client);
-                // print(_distance);
-                if(_distance<minDistance && Mathf.Abs(_distance - minDistance)>minAuthorityTransferDistance){
-                    newAuthority = client;
-                    minDistance = _distance;
-                }
-            }
-        }
-
-        // print(newAuthority);
+        if(!guard.isChasing()) return; //Don't update state if the guard is chasing
+        NetworkConnectionToClient newAuthority = guard.getTarget();
         if(newAuthority != null && newAuthority != currentAuthority) TransferAuthority(newAuthority);
-    }
-
-    //TODO: could make this faster by storing a list of player objects
-    float getDistanceToClient(NetworkConnectionToClient client){ 
-        foreach (NetworkIdentity obj in client.clientOwnedObjects){
-            // print(obj);
-            if(obj.gameObject !=  gameObject && obj.gameObject.tag == "Player"){
-                return Vector3.Distance(obj.transform.position, transform.position);
-            }
-        }
-        return Mathf.Infinity;
     }
 
     // [Command(requiresAuthority = false)]

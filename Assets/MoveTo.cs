@@ -26,8 +26,8 @@ public class MoveTo : NetworkBehaviour {
 
     [SyncVar]
     int patrolIndex = 0;
-    [SyncVar]
-    GUARD_STATES currentState = GUARD_STATES.Patrolling;
+    [SyncVar(hook = nameof(stateChange))]
+    public GUARD_STATES currentState = GUARD_STATES.Patrolling;
    
 
     public void Alert(GameObject target){
@@ -43,10 +43,23 @@ public class MoveTo : NetworkBehaviour {
         setState(GUARD_STATES.Patrolling);
     }
 
-    
+    void stateChange(GUARD_STATES oldState, GUARD_STATES newState){
+        print("StateChange " + newState);
+        switch(newState){
+            case GUARD_STATES.Patrolling:
+                setSpeed(walkSpeed);
+                break;
+            
+            case GUARD_STATES.Chasing:
+                setSpeed(runSpeed);
+                break;
+        }
+    }
+
     public override void OnStartAuthority()
     {
         base.OnStartAuthority();
+        print(currentState);
         switch(currentState){
             case GUARD_STATES.Patrolling:
                 setSpeed(walkSpeed);
@@ -156,6 +169,10 @@ public class MoveTo : NetworkBehaviour {
 
     public bool isChasing(){
         return currentState == GUARD_STATES.Chasing;
+    }
+
+    public NetworkConnectionToClient getTarget(){ //TODO: fix this. this is terrible
+        return targetDestination.gameObject.GetComponent<PlayerHeist>().getConnection();
     }
 
 

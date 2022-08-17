@@ -43,4 +43,8 @@ public class PlayerHeist : NetworkBehaviour
         // Debug.Log("LOCAL");
     }
 
+    public NetworkConnectionToClient getConnection(){
+        return this.connectionToClient;
+    }
+
 }
