@@ -521,6 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 147257874}
   - component: {fileID: 147257875}
+  - component: {fileID: 147257876}
   m_Layer: 0
   m_Name: PatrolPoint (1)
   m_TagString: Untagged
@@ -554,6 +555,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b1ec371841a348b0fe7f663261bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &147257876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147257873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 3020341235
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &223236956
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311384527}
   - component: {fileID: 311384528}
+  - component: {fileID: 311384529}
   m_Layer: 0
   m_Name: PatrolPoint (4)
   m_TagString: Untagged
@@ -951,6 +970,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b1ec371841a348b0fe7f663261bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &311384529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311384526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 3841730163
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &351871669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,6 +1626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 532583819}
   - component: {fileID: 532583820}
+  - component: {fileID: 532583821}
   m_Layer: 0
   m_Name: PatrolPoint (5)
   m_TagString: Untagged
@@ -1623,6 +1660,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b1ec371841a348b0fe7f663261bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &532583821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532583818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 3510430244
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &555570932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 639408176}
   - component: {fileID: 639408177}
+  - component: {fileID: 639408178}
   m_Layer: 0
   m_Name: PatrolPoint (3)
   m_TagString: Untagged
@@ -1951,6 +2006,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b1ec371841a348b0fe7f663261bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &639408178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639408175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 1127428233
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &655720569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,6 +2411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 734971197}
   - component: {fileID: 734971198}
+  - component: {fileID: 734971199}
   m_Layer: 0
   m_Name: PatrolPoint
   m_TagString: Untagged
@@ -2372,6 +2445,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b1ec371841a348b0fe7f663261bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &734971199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734971196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 3400528991
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &738533525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,6 +2567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762134083}
   - component: {fileID: 762134084}
+  - component: {fileID: 762134085}
   m_Layer: 0
   m_Name: PatrolPoint (2)
   m_TagString: Untagged
@@ -2510,6 +2601,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b1ec371841a348b0fe7f663261bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &762134085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762134082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 1534767929
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &773370025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3554,6 +3662,22 @@ PrefabInstance:
       propertyPath: clientAuthority
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 167780536852162856, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
+      propertyPath: catchupMultiplier
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 167780536852162856, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
+      propertyPath: interpolatePosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 167780536852162856, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
+      propertyPath: interpolateRotation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 167780536852162856, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
+      propertyPath: bufferResetMultiplier
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3369408342704206454, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
       propertyPath: sceneId
       value: 3684641698
@@ -4110,6 +4234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1043256260}
   - component: {fileID: 1043256261}
+  - component: {fileID: 1043256262}
   m_Layer: 0
   m_Name: PatrolPoint (6)
   m_TagString: Untagged
@@ -4143,6 +4268,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b1ec371841a348b0fe7f663261bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1043256262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043256259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 115065409
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &1078068133
 GameObject:
   m_ObjectHideFlags: 0
