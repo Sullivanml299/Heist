@@ -43,7 +43,4 @@ public class PlayerHeist : NetworkBehaviour
         // Debug.Log("LOCAL");
     }
 
-
-
-
 }

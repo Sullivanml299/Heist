@@ -30,15 +30,12 @@ public class GuardFOV : MonoBehaviour
         GetComponent<MeshFilter>().mesh = mesh;
         GetComponent<MeshCollider>().sharedMesh = mesh;
         // isServer = guard.GetComponent<GuardNetworkBehaviour>().isServer;
-        
-        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        
         float angle = GetAngleFromVector(guardTransform.forward)+fov/2;//offset the angel to center 
         angleIncrease = fov/rayCount;
         vertices = new Vector3[rayCount+1+1];
@@ -63,7 +60,7 @@ public class GuardFOV : MonoBehaviour
             }
             else {
                 vertex = raycastHit.point;
-                if (checkAlert(raycastHit.collider.gameObject) && guard != null) { //TODO: clean the null part up
+                if (checkAlert(raycastHit.collider.gameObject) && guard.hasAuthority) { //TODO: clean the null part up
                     // print(guard);
                     guard.Alert(raycastHit.collider.gameObject);
                 }

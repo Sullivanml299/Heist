@@ -3552,7 +3552,7 @@ PrefabInstance:
       objectReference: {fileID: 1043256260}
     - target: {fileID: 167780536852162856, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
       propertyPath: clientAuthority
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3369408342704206454, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
       propertyPath: sceneId
@@ -3617,6 +3617,10 @@ PrefabInstance:
     - target: {fileID: 5386983654610240985, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
       propertyPath: m_Name
       value: Guard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629660023108460501, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
+      propertyPath: clientAuthority
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73b599ce087822a4fa441211cfd419a0, type: 3}
