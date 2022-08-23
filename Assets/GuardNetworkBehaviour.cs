@@ -40,21 +40,17 @@ public class GuardNetworkBehaviour : NetworkBehaviour
 
     //PUBLIC CALLS
     public void Alert(GameObject newTarget){
-        if(guard.currentState != GUARD_STATES.Chasing) CmdAlert(newTarget.transform);
+        CmdAlert(newTarget.transform);
+        // if(guard.currentState != GUARD_STATES.Chasing) CmdAlert(newTarget.transform);
     }
     public void Alert(Transform newTarget){
-        if(guard.currentState != GUARD_STATES.Chasing) CmdAlert(newTarget);
+        CmdAlert(newTarget);
+        // if(guard.currentState != GUARD_STATES.Chasing) CmdAlert(newTarget);
     }
 
     public void Caught(){
         CmdCaught();
     }
-
-
-
-
-
-
 
 
 
@@ -68,8 +64,18 @@ public class GuardNetworkBehaviour : NetworkBehaviour
 
     [Command (requiresAuthority = false)]
     void CmdAlert(Transform newTarget){
-        guard.Alert(newTarget);
+        if(CanBeAlerted(newTarget)) guard.Alert(newTarget);
     }
+
+
+
+    //UTILITIES
+    bool CanBeAlerted(Transform newTarget){
+        if( guard.currentState != GUARD_STATES.Chasing ||
+            guard.currentTarget == newTarget.gameObject) return true;
+        return false;
+    }
+
 
     // public void TransferAuthority(int connID){
     //     print("Updating Authority!");

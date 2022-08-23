@@ -14,12 +14,13 @@ public enum GUARD_STATES{
 public class MoveTo : NetworkBehaviour {
 
     public Transform[] patrolRoute;
+
     [SyncVar]
     public Transform targetDestination;
+    public GameObject currentTarget;
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
     public float chaseCooldownMax = 0.5f;
-
     public float currentChaseCooldown = 0f;
 
     NavMeshAgent agent;
@@ -30,15 +31,28 @@ public class MoveTo : NetworkBehaviour {
     public GUARD_STATES currentState = GUARD_STATES.Patrolling;
    
 
+    void Start () {
+        agent = GetComponent<NavMeshAgent>();
+        SetTarget(patrolRoute[patrolIndex]);//targetDestination = patrolRoute[patrolIndex];
+        setSpeed(walkSpeed);
+    }
+
+    void FixedUpdate(){
+        if(hasAuthority) move();
+    }
+
+
     public void Alert(Transform target){
         
-        if(currentState == GUARD_STATES.Patrolling && currentChaseCooldown <= 0){
+        if(currentState == GUARD_STATES.Chasing){
+            SetTarget(target);
+        }
+        else if(currentState == GUARD_STATES.Patrolling && currentChaseCooldown <= 0){
             setState(GUARD_STATES.Chasing);
             SetTarget(target.transform);// targetDestination = target.transform;
             currentChaseCooldown = chaseCooldownMax;
         }
     }
-
 
     public void Caught(){
         if(hasAuthority) setState(GUARD_STATES.Patrolling);
@@ -58,36 +72,27 @@ public class MoveTo : NetworkBehaviour {
         }
     }
 
-    public override void OnStartAuthority()
-    {
-        base.OnStartAuthority();
-        print(currentState);
-        switch(currentState){
-            case GUARD_STATES.Patrolling:
-                setSpeed(walkSpeed);
-                break;
+    // public override void OnStartAuthority()
+    // {
+    //     base.OnStartAuthority();
+    //     print(currentState);
+    //     switch(currentState){
+    //         case GUARD_STATES.Patrolling:
+    //             setSpeed(walkSpeed);
+    //             break;
             
-            case GUARD_STATES.Chasing:
-                setSpeed(runSpeed);
-                break;
-        }
-    }
+    //         case GUARD_STATES.Chasing:
+    //             setSpeed(runSpeed);
+    //             break;
+    //     }
+    // }
 
-    public override void OnStopAuthority()
-    {
-        base.OnStopAuthority();
-    }
+    // public override void OnStopAuthority()
+    // {
+    //     base.OnStopAuthority();
+    // }
 
 
-    void Start () {
-        agent = GetComponent<NavMeshAgent>();
-        SetTarget(patrolRoute[patrolIndex]);//targetDestination = patrolRoute[patrolIndex];
-        setSpeed(walkSpeed);
-    }
-
-    void FixedUpdate(){
-        if(hasAuthority) move();
-    }
 
     void move(){
         if(targetDestination == null)SetTarget(patrolRoute[patrolIndex]);// targetDestination = patrolRoute[patrolIndex];
@@ -177,6 +182,9 @@ public class MoveTo : NetworkBehaviour {
         return targetDestination.gameObject.GetComponent<PlayerHeist>().getConnection();
     }
 
+    public float DistanceFromTarget(){
+        return Vector3.Distance(transform.position, targetDestination.position);
+    }
 
     void setState(GUARD_STATES newState){
         switch(currentState){
@@ -211,7 +219,9 @@ public class MoveTo : NetworkBehaviour {
 
 
     void SetTarget(Transform newTarget){
-        targetDestination = newTarget;
+        // targetDestination = newTarget;
+        currentTarget = newTarget.gameObject;
+        targetDestination.position = newTarget.position;
         CmdSetTarget(newTarget);
     }
 
@@ -227,7 +237,8 @@ public class MoveTo : NetworkBehaviour {
 
     [Command]
     void CmdSetTarget(Transform newTarget){
-        targetDestination = newTarget;
+        // targetDestination = newTarget;
+        targetDestination.position = newTarget.position;
     }
 
 
