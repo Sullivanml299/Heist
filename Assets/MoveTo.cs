@@ -30,7 +30,7 @@ public class MoveTo : NetworkBehaviour {
     public GUARD_STATES currentState = GUARD_STATES.Patrolling;
    
 
-    public void Alert(GameObject target){
+    public void Alert(Transform target){
         
         if(currentState == GUARD_STATES.Patrolling && currentChaseCooldown <= 0){
             setState(GUARD_STATES.Chasing);
@@ -39,8 +39,10 @@ public class MoveTo : NetworkBehaviour {
         }
     }
 
+
     public void Caught(){
-        setState(GUARD_STATES.Patrolling);
+        if(hasAuthority) setState(GUARD_STATES.Patrolling);
+        currentChaseCooldown = chaseCooldownMax;
     }
 
     void stateChange(GUARD_STATES oldState, GUARD_STATES newState){
@@ -124,16 +126,16 @@ public class MoveTo : NetworkBehaviour {
     }
 
     void Chase(){
-        if(Vector3.Distance(targetDestination.transform.position, transform.position) < 2f) {
-            GameObject target = targetDestination.gameObject;
-            // var returnPosition = targetDestination.gameObject.GetComponent<PlayerHeist>().getStart();
-            // targetDestination.gameObject.transform.position = returnPosition;
-            Debug.Log("SEND RPC");
-            target.GetComponent<PlayerHeist>().LocalReturnToStart();
-            // if(isServer) targetDestination.gameObject.GetComponent<PlayerHeist>().LocalReturnToStart();
-            // else targetDestination.gameObject.GetComponent<PlayerHeist>().TargetReturnToStart();
-            setState(GUARD_STATES.Patrolling);
-        }
+        // if(Vector3.Distance(targetDestination.transform.position, transform.position) < 2f) {
+        //     GameObject target = targetDestination.gameObject;
+        //     // var returnPosition = targetDestination.gameObject.GetComponent<PlayerHeist>().getStart();
+        //     // targetDestination.gameObject.transform.position = returnPosition;
+        //     Debug.Log("SEND RPC");
+        //     target.GetComponent<PlayerHeist>().LocalReturnToStart();
+        //     // if(isServer) targetDestination.gameObject.GetComponent<PlayerHeist>().LocalReturnToStart();
+        //     // else targetDestination.gameObject.GetComponent<PlayerHeist>().TargetReturnToStart();
+        //     setState(GUARD_STATES.Patrolling);
+        // }
     }
 
     void UpdatePatrolPoint(){
@@ -227,6 +229,8 @@ public class MoveTo : NetworkBehaviour {
     void CmdSetTarget(Transform newTarget){
         targetDestination = newTarget;
     }
+
+
 
 
 }

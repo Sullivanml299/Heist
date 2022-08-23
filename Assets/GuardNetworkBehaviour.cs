@@ -25,31 +25,6 @@ public class GuardNetworkBehaviour : NetworkBehaviour
         networkTransform.Reset();
     }
 
-    public void TransferAuthority(int connID){
-        print("Updating Authority!");
-        var conn = connections[connID]; 
-        identity.RemoveClientAuthority();
-        identity.AssignClientAuthority(conn);
-        currentAuthority = conn;
-
-        networkTransform.CancelInvoke();
-        networkTransform.Reset();
-    }
-
-    public override void OnStartAuthority()
-    {
-        base.OnStartAuthority();
-        networkTransform.CancelInvoke();
-        networkTransform.Reset();
-    }
-
-    public override void OnStopAuthority()
-    {
-        base.OnStopAuthority();
-        networkTransform.CancelInvoke();
-        networkTransform.Reset();
-    }
-
     void Start(){
         networkTransform = GetComponent<NetworkTransform>();
         identity = GetComponent<NetworkIdentity>();
@@ -59,18 +34,78 @@ public class GuardNetworkBehaviour : NetworkBehaviour
         if(isServer) TransferAuthority(localConnection);
     }
 
-    void Update(){
-        if(isServer) updateControl();
+
+
+
+
+    //PUBLIC CALLS
+    public void Alert(GameObject newTarget){
+        if(guard.currentState != GUARD_STATES.Chasing) CmdAlert(newTarget.transform);
+    }
+    public void Alert(Transform newTarget){
+        if(guard.currentState != GUARD_STATES.Chasing) CmdAlert(newTarget);
     }
 
-    void updateControl(){
-        if(!guard.isChasing()) return; //Don't update state if the guard is chasing
-        NetworkConnectionToClient newAuthority = guard.getTarget();
-        if(newAuthority != null && newAuthority != currentAuthority) TransferAuthority(newAuthority);
+    public void Caught(){
+        CmdCaught();
     }
 
-    // [Command(requiresAuthority = false)]
-    // public void CmdCaught(){
-    //     guard.Caught();
+
+
+
+
+
+
+
+
+    //COMMANDS
+    [Command(requiresAuthority = false)]
+    public void CmdCaught(){
+        guard.Caught();
+    }
+
+
+
+    [Command (requiresAuthority = false)]
+    void CmdAlert(Transform newTarget){
+        guard.Alert(newTarget);
+    }
+
+    // public void TransferAuthority(int connID){
+    //     print("Updating Authority!");
+    //     var conn = connections[connID]; 
+    //     identity.RemoveClientAuthority();
+    //     identity.AssignClientAuthority(conn);
+    //     currentAuthority = conn;
+
+    //     networkTransform.CancelInvoke();
+    //     networkTransform.Reset();
     // }
+
+    // public override void OnStartAuthority()
+    // {
+    //     base.OnStartAuthority();
+    //     networkTransform.CancelInvoke();
+    //     networkTransform.Reset();
+    // }
+
+    // public override void OnStopAuthority()
+    // {
+    //     base.OnStopAuthority();
+    //     networkTransform.CancelInvoke();
+    //     networkTransform.Reset();
+    // }
+
+
+    // void Update(){
+    //     // if(isServer) updateControl();
+    // }
+
+    // void updateControl(){
+    //     if(!guard.isChasing()) return; //Don't update state if the guard is chasing
+    //     NetworkConnectionToClient newAuthority = guard.getTarget();
+    //     if(newAuthority != null && newAuthority != currentAuthority) TransferAuthority(newAuthority);
+    // }
+
+
 }

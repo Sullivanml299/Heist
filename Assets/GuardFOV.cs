@@ -11,6 +11,7 @@ public class GuardFOV : MonoBehaviour
     public float meshHeight = 0.5f;
     public Transform guardTransform;
     public MoveTo guard;
+    public GuardNetworkBehaviour guardNetworking;
     public LayerMask layerMask;
 
     Vector3 origin;
@@ -60,9 +61,9 @@ public class GuardFOV : MonoBehaviour
             }
             else {
                 vertex = raycastHit.point;
-                if (checkAlert(raycastHit.collider.gameObject) && guard.hasAuthority) { //TODO: clean the null part up
+                if (isPlayer(raycastHit.collider.gameObject)){ //&& guard.hasAuthority) { //TODO: clean the null part up
                     // print(guard);
-                    guard.Alert(raycastHit.collider.gameObject);
+                    guardNetworking.Alert(raycastHit.collider.gameObject);
                 }
             }
 
@@ -91,9 +92,7 @@ public class GuardFOV : MonoBehaviour
         origin = newOrigin;
     }
 
-    bool checkAlert(GameObject obj){
-        // print(obj.tag);
-
+    bool isPlayer(GameObject obj){
         if(obj.tag == "Player") return true;
         return false;
     }

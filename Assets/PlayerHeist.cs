@@ -40,7 +40,7 @@ public class PlayerHeist : NetworkBehaviour
     public void LocalReturnToStart(){
         if(hasAuthority) transform.position = startPosition;
         else TargetReturnToStart();
-        // Debug.Log("LOCAL");
+        Debug.Log("LOCAL");
     }
 
     public NetworkConnectionToClient getConnection(){
