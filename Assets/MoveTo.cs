@@ -15,20 +15,35 @@ public class MoveTo : NetworkBehaviour {
 
     public Transform[] patrolRoute;
 
-    [SyncVar]
-    public Transform targetDestination;
+
     public GameObject currentTarget;
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
     public float chaseCooldownMax = 0.5f;
     public float currentChaseCooldown = 0f;
+    public float chaseStopDistance = 0.5f;
 
-    NavMeshAgent agent;
+
+    [Header("Look Around")]
+    public float lookAroundAngle = 45f;
+    public float lookSpeed = 100f;
+    public float lookTime = 2f;
+    private int lookDirection = -1;
+    public float lookTimeRemaining;
+
 
     [SyncVar]
     int patrolIndex = 0;
+
+    [SyncVar]
+    public Transform targetDestination;
+
     [SyncVar(hook = nameof(stateChange))]
     public GUARD_STATES currentState = GUARD_STATES.Patrolling;
+
+    NavMeshAgent agent;
+
+    private Quaternion investigateRotation;
    
 
     void Start () {
@@ -49,8 +64,11 @@ public class MoveTo : NetworkBehaviour {
         }
         else if(currentState == GUARD_STATES.Patrolling && currentChaseCooldown <= 0){
             setState(GUARD_STATES.Chasing);
-            SetTarget(target.transform);// targetDestination = target.transform;
+            SetTarget(target);// targetDestination = target.transform;
             currentChaseCooldown = chaseCooldownMax;
+        }
+        else if(currentState == GUARD_STATES.Investigating){
+            SetTarget(target);
         }
     }
 
@@ -114,6 +132,7 @@ public class MoveTo : NetworkBehaviour {
                 break;
             
             case GUARD_STATES.Investigating:
+                Investigate();
                 //if you reach the last known position look around in points of interest
                 break;
         }
@@ -131,16 +150,22 @@ public class MoveTo : NetworkBehaviour {
     }
 
     void Chase(){
-        // if(Vector3.Distance(targetDestination.transform.position, transform.position) < 2f) {
-        //     GameObject target = targetDestination.gameObject;
-        //     // var returnPosition = targetDestination.gameObject.GetComponent<PlayerHeist>().getStart();
-        //     // targetDestination.gameObject.transform.position = returnPosition;
-        //     Debug.Log("SEND RPC");
-        //     target.GetComponent<PlayerHeist>().LocalReturnToStart();
-        //     // if(isServer) targetDestination.gameObject.GetComponent<PlayerHeist>().LocalReturnToStart();
-        //     // else targetDestination.gameObject.GetComponent<PlayerHeist>().TargetReturnToStart();
-        //     setState(GUARD_STATES.Patrolling);
-        // }
+        // print(Vector3.Distance(targetDestination.transform.position, transform.position));
+        if(agent.desiredVelocity.magnitude == 0f) { //if the agent thinks it is at its destination
+            setState(GUARD_STATES.Investigating);
+        }
+    }
+
+    void Investigate(){
+        if(Quaternion.Angle(investigateRotation, transform.rotation) > lookAroundAngle) {
+            lookDirection *= -1;
+            transform.Rotate(Vector3.up * Time.deltaTime * lookSpeed * lookDirection);// do it twice so you don't get stuck on rounding errors
+        }
+        transform.Rotate(Vector3.up * Time.deltaTime * lookSpeed * lookDirection);
+
+        //Timer
+        lookTimeRemaining -= Time.deltaTime;
+        if (lookTimeRemaining <= 0) setState(GUARD_STATES.Patrolling);
     }
 
     void UpdatePatrolPoint(){
@@ -210,6 +235,8 @@ public class MoveTo : NetworkBehaviour {
                 break;
 
             case GUARD_STATES.Investigating:
+                investigateRotation = transform.rotation;
+                lookTimeRemaining = lookTime;
                 break;
         }
 
