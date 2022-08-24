@@ -6,6 +6,6 @@ public class DrawPointInScene : MonoBehaviour
 {
     void OnDrawGizmos(){
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, 1);
+        Gizmos.DrawSphere(transform.position, 0.5f);
     }
 }
