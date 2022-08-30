@@ -28,7 +28,9 @@ public class PlayerCollision : MonoBehaviour
         //     lastGuardNetworker.Caught();
         //     thisPlayer.LocalReturnToStart();
         // }
+        print(collider.tag);
         if(collider.tag == "Guard"){
+            print("Caught");
             collider.GetComponent<MoveTo>().Caught();
             thisPlayer.LocalReturnToStart();
         }

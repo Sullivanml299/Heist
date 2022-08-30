@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardSmall
       objectReference: {fileID: 0}
+    - target: {fileID: 5470324953812588503, guid: 5261159b1b2631641802ad365be9ff5d, type: 3}
+      propertyPath: m_TagString
+      value: Guard
+      objectReference: {fileID: 0}
     - target: {fileID: 5470324953812588507, guid: 5261159b1b2631641802ad365be9ff5d, type: 3}
       propertyPath: m_Enabled
       value: 0
