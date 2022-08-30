@@ -9,6 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d8fd10ae4f6eb43b111363d137a215, type: 3}
-  m_Name: SpawnRate_Bookshelf
+  m_Script: {fileID: 11500000, guid: 986c6631e487d5f4b8c4d7ef22c1ce1e, type: 3}
+  m_Name: ContainerSettings_shelf
   m_EditorClassIdentifier: 
+  possibleLoot: []
