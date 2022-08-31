@@ -8,6 +8,7 @@ public class Container : MonoBehaviour
     public int minItemCount = 1;
     public int maxItemCount = 5;
     public List<Loot> contents = new List<Loot>();
+    public Outline outline;
 
 
     // Start is called before the first frame update
@@ -17,6 +18,10 @@ public class Container : MonoBehaviour
         printContents();
     }
 
+
+    public void setFocus(bool value){
+        outline.enabled = value;
+    }
 
     void fillContainer(){
         int itemCount = Random.Range(minItemCount, maxItemCount+1); //add 1 because int version is exclusive on high end
@@ -37,6 +42,13 @@ public class Container : MonoBehaviour
         foreach(Loot loot in contents){
             print(loot.name + " " + loot.value);
         }
+    }
+
+    void lootAll(List<Loot> targetInventory){
+        foreach(Loot loot in contents){
+            targetInventory.Add(loot);
+        }
+        contents.Clear();
     }
 
 }
