@@ -15,12 +15,21 @@ public class PlayerInventory : MonoBehaviour
     private StarterAssetsInputs _input;
     private GameObject raycastObject;
     private Container container;
+    private Animator _animator;
+    private ThirdPersonController _controller;
+    private int _animIDLootLow;
+    private int _animIDLootHigh;
     
 
     // Start is called before the first frame update
     void Start()
     {
         _input = GetComponent<StarterAssetsInputs>();
+        _animator = GetComponent<Animator>();
+        _controller = GetComponent<ThirdPersonController>();
+
+        _animIDLootLow = Animator.StringToHash("LootingLow");
+        _animIDLootHigh = Animator.StringToHash("LootingHigh");
     }
 
     // Update is called once per frame
@@ -33,14 +42,10 @@ public class PlayerInventory : MonoBehaviour
                             transform.forward, out hit, minLootDistance, mask)){
 
             if( raycastObject == null || raycastObject != hit.collider.gameObject) {
-                raycastObject = hit.collider.gameObject;
-                container = raycastObject.GetComponent<Container>();
-                container.setFocus(true);
+                registerContainer(hit);
             }
         }else if(raycastObject != null) {
-            container.setFocus(false);
-            raycastObject = null;
-            container = null;
+                unregisterContainer();
         }
 
 
@@ -49,6 +54,30 @@ public class PlayerInventory : MonoBehaviour
         // print(_input.loot);
         if(_input.loot) {
             print("Looting");
+            // _animator.SetBool(_animIDLootHigh, true);
+            lootRegisteredContainer();
         }
+        // else{
+        //     // _animator.SetBool(_animIDLootHigh, false);
+        // }
+    }
+
+    void lootRegisteredContainer(){
+        if(container == null || !container.hasLoot()) return;
+        container.lootAll(inventory);
+        if(!container.hasLoot()) unregisterContainer();
+    }
+
+    void registerContainer(RaycastHit hit){
+        raycastObject = hit.collider.gameObject;
+        container = raycastObject.GetComponent<Container>();
+        if(container.hasLoot()) container.setFocus(true);
+        else container.setFocusEmpty(true);
+    }
+
+    void unregisterContainer(){
+        container.setFocus(false);
+        raycastObject = null;
+        container = null;
     }
 }
