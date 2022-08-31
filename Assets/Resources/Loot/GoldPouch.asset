@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d42f50abbe031f4ab3dd0c4edc5c332, type: 3}
   m_Name: GoldPouch
   m_EditorClassIdentifier: 
-  lootName: 
-  value: 0
+  lootName: Gold Pouch
+  value: 20
+  itemIcon: {fileID: 0}
+  itemObject: {fileID: 0}

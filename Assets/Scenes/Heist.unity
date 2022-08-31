@@ -2608,7 +2608,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26182
+  m_Name: pb_Mesh26214
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8414,7 +8414,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1625399741618836, guid: 41a65a1f432472c4e8c8fb70444d0f5a, type: 3}
   m_PrefabInstance: {fileID: 1484646160}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &745826886
+--- !u!114 &745826887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8423,12 +8423,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 745826881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: 48d590dbde44b604aac373d7b848461c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 0.9970244, b: 0, a: 0.5}
-  m_EffectDistance: {x: 64.84, y: 84.81}
-  m_UseGraphicAlpha: 1
+  settings: {fileID: 11400000, guid: 73507254deab90c47bb3d4d04f1f4fec, type: 2}
+  minItemCount: 1
+  maxItemCount: 5
+  contents: []
 --- !u!4 &757465794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4032419015541678, guid: 3b31857525046034989fe2b3f6f987bc, type: 3}

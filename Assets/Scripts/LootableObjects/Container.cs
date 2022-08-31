@@ -5,6 +5,8 @@ using UnityEngine;
 public class Container : MonoBehaviour
 {
     public ContainerSettings settings;
+    public int minItemCount = 1;
+    public int maxItemCount = 5;
     public List<Loot> contents = new List<Loot>();
 
 
@@ -17,9 +19,17 @@ public class Container : MonoBehaviour
 
 
     void fillContainer(){
-        foreach(LootSettings itemSettings in settings.possibleLoot){
-            print(itemSettings.loot);
-            contents.Add(itemSettings.loot);
+        int itemCount = Random.Range(minItemCount, maxItemCount+1); //add 1 because int version is exclusive on high end
+        float roll;
+        float currentProbability;
+
+        for(var i = 0; i<itemCount; i++){
+            roll = Random.value;
+            currentProbability = 0;
+            foreach(LootSettings itemSettings in settings.possibleLoot){
+                currentProbability += itemSettings.spawnRate;
+                if(roll <= currentProbability) contents.Add(itemSettings.loot);
+            }
         }
     }
 
@@ -28,4 +38,5 @@ public class Container : MonoBehaviour
             print(loot.name + " " + loot.value);
         }
     }
+
 }
