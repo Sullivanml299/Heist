@@ -8426,7 +8426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 0, g: 0.85355186, b: 1, a: 1}
   outlineWidth: 2
   precomputeOutline: 1
@@ -9540,6 +9540,7 @@ MonoBehaviour:
   minItemCount: 1
   maxItemCount: 5
   contents: []
+  outline: {fileID: 745826886}
 --- !u!4 &757465794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4032419015541678, guid: 3b31857525046034989fe2b3f6f987bc, type: 3}
@@ -16617,6 +16618,14 @@ PrefabInstance:
     - target: {fileID: 1625399741618836, guid: 41a65a1f432472c4e8c8fb70444d0f5a, type: 3}
       propertyPath: m_Name
       value: Shelve_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625399741618836, guid: 41a65a1f432472c4e8c8fb70444d0f5a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625399741618836, guid: 41a65a1f432472c4e8c8fb70444d0f5a, type: 3}
+      propertyPath: m_TagString
+      value: Container
       objectReference: {fileID: 0}
     - target: {fileID: 1625399741618836, guid: 41a65a1f432472c4e8c8fb70444d0f5a, type: 3}
       propertyPath: m_StaticEditorFlags

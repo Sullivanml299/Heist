@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Guard
+  - Container
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - FOV
   - Player
   - Guard
-  - Outline
+  - Container
   - 
   - 
   - 
