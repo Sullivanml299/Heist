@@ -2608,7 +2608,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26214
+  m_Name: pb_Mesh26222
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9536,11 +9536,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d590dbde44b604aac373d7b848461c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   settings: {fileID: 11400000, guid: 73507254deab90c47bb3d4d04f1f4fec, type: 2}
   minItemCount: 1
   maxItemCount: 5
   contents: []
   outline: {fileID: 745826886}
+  itemCount: 0
+--- !u!114 &745826888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745826881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 2425098338
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 41a65a1f432472c4e8c8fb70444d0f5a
+  hasSpawned: 0
 --- !u!4 &757465794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4032419015541678, guid: 3b31857525046034989fe2b3f6f987bc, type: 3}

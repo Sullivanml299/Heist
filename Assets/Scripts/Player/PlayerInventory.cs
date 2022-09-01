@@ -54,18 +54,28 @@ public class PlayerInventory : MonoBehaviour
         // print(_input.loot);
         if(_input.loot) {
             print("Looting");
-            // _animator.SetBool(_animIDLootHigh, true);
+            _animator.SetBool(_animIDLootLow, true);
             lootRegisteredContainer();
         }
-        // else{
-        //     // _animator.SetBool(_animIDLootHigh, false);
-        // }
+        else{
+            _animator.SetBool(_animIDLootLow, false);
+        }
+    }
+
+    public void addItem(Loot loot){
+        inventory.Add(loot);
+        //TODO: add some message here;
+    }
+
+    public void containerWasEmpty(){
+        print("container is empty");
     }
 
     void lootRegisteredContainer(){
         if(container == null || !container.hasLoot()) return;
-        container.lootAll(inventory);
-        if(!container.hasLoot()) unregisterContainer();
+        container.loot(this);
+        // container.lootAll(inventory);
+        if(!container.hasLoot()) unregisterContainer(); //TODO: need to update has loot to check with the server somehow
     }
 
     void registerContainer(RaycastHit hit){
@@ -80,4 +90,7 @@ public class PlayerInventory : MonoBehaviour
         raycastObject = null;
         container = null;
     }
+
+
+    
 }
