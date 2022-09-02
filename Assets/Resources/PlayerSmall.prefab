@@ -623,9 +623,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 4189063029258259501}
-  stealthMaterial: {fileID: 2100000, guid: 620c0576de6e72d45855405a9a30acaa, type: 2}
+  stealthMaterial: {fileID: 2100000, guid: 5df4acd2054c9db43b5d70b1aa798f73, type: 2}
   normalMaterials: []
   stealthMaterials: []
+  useTrail: 0
   trail: {fileID: 7311258623556872680}
 --- !u!114 &6629660023108460501
 MonoBehaviour:

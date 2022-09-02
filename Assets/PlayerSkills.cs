@@ -10,6 +10,7 @@ public class PlayerSkills : MonoBehaviour
     public Material stealthMaterial;
     public Material[] normalMaterials;
     public Material[] stealthMaterials;
+    public bool useTrail = true;
     public GameObject trail;
     StarterAssetsInputs _input;
     bool stealthActive = false;
@@ -45,12 +46,14 @@ public class PlayerSkills : MonoBehaviour
     void activateStealthMaterials(){
         // print("Activate");
         _renderer.materials= stealthMaterials;
-        trail.SetActive(true);
+        _renderer.shadowCastingMode= UnityEngine.Rendering.ShadowCastingMode.Off;
+        trail.SetActive(useTrail);
     }
 
     void deactivateStealthMaterials(){
         // print("DEActivate");
         _renderer.materials= normalMaterials;
+        _renderer.shadowCastingMode= UnityEngine.Rendering.ShadowCastingMode.On;
         trail.SetActive(false);
     }
 }
