@@ -19,6 +19,7 @@ public class PlayerInventory : MonoBehaviour
     private ThirdPersonController _controller;
     private int _animIDLootLow;
     private int _animIDLootHigh;
+    private UIController mainUI;
     
 
     // Start is called before the first frame update
@@ -30,6 +31,9 @@ public class PlayerInventory : MonoBehaviour
 
         _animIDLootLow = Animator.StringToHash("LootingLow");
         _animIDLootHigh = Animator.StringToHash("LootingHigh");
+
+        mainUI = GameObject.Find("MainUI").GetComponent<UIController>();
+
     }
 
     // Update is called once per frame
@@ -64,7 +68,9 @@ public class PlayerInventory : MonoBehaviour
 
     public void addItem(Loot loot){
         inventory.Add(loot);
+        mainUI.newNotification(loot);
         //TODO: add some message here;
+
     }
 
     public void containerWasEmpty(){
