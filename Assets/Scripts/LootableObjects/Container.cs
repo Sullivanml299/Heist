@@ -11,7 +11,7 @@ public class Container : NetworkBehaviour
     public int maxItemCount = 5;
     public List<Loot> contents = new List<Loot>();
     public Outline outline;
-    [SyncVar]
+    [SyncVar(hook = nameof(countSynced))]
     public int itemCount;
 
     [SyncVar(hook = nameof(seedSynced))]
@@ -67,6 +67,11 @@ public class Container : NetworkBehaviour
     void seedSynced(int oldSeed, int newSeed){
         print("SyncSeed!");
         if(!isServer) fillContainer(newSeed);
+    }
+
+    void countSynced(int oldCount, int newCount){
+        print("SyncCount");
+        if(!isServer && newCount<=0 && localInventory != null) localInventory.unregisterContainer(this); 
     }
 
     void fillContainer(int seed = 0){

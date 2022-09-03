@@ -17,6 +17,7 @@ public class PlayerInventory : MonoBehaviour
     private Container container;
     private Animator _animator;
     private ThirdPersonController _controller;
+    private CharacterController _moveController;
     private int _animIDLootLow;
     private int _animIDLootHigh;
     private UIController mainUI;
@@ -25,9 +26,14 @@ public class PlayerInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(!GetComponent<PlayerHeist>().isLocalPlayer) {
+            this.enabled = false;
+            return;
+        }
         _input = GetComponent<StarterAssetsInputs>();
         _animator = GetComponent<Animator>();
         _controller = GetComponent<ThirdPersonController>();
+        _moveController = GetComponent<CharacterController>();
 
         _animIDLootLow = Animator.StringToHash("LootingLow");
         _animIDLootHigh = Animator.StringToHash("LootingHigh");
@@ -56,17 +62,22 @@ public class PlayerInventory : MonoBehaviour
 
         Debug.DrawRay(transform.position + Vector3.up * raycastYOffset, transform.forward * minLootDistance, Color.blue);
         // print(_input.loot);
-        if(_input.loot) {
-            print("Looting");
+        if(_input.loot && container != null) {
+            // print("Looting");
             _animator.SetBool(_animIDLootLow, true);
-            lootRegisteredContainer();
+            _moveController.enabled = false;
+            _controller.enabled = false;
+            // lootRegisteredContainer();
         }
         else{
             _animator.SetBool(_animIDLootLow, false);
+            _moveController.enabled = true;
+            _controller.enabled = true;
         }
     }
 
     public void addItem(Loot loot){
+        print("Add ITEM");
         inventory.Add(loot);
         mainUI.newNotification(loot);
         //TODO: add some message here;
@@ -77,11 +88,12 @@ public class PlayerInventory : MonoBehaviour
         print("container is empty");
     }
 
-    void lootRegisteredContainer(){
-        if(container == null || !container.hasLoot()) return;
-        container.loot(this);
-        // container.lootAll(inventory);
-        if(!container.hasLoot()) unregisterContainer(); //TODO: need to update has loot to check with the server somehow
+    public void unregisterContainer(Container oldContainer = null){
+        print("Unregister " +( oldContainer != null && oldContainer != container));
+        if(oldContainer != null && oldContainer != container) return;
+        container.setFocus(false);
+        raycastObject = null;
+        container = null;
     }
 
     void registerContainer(RaycastHit hit){
@@ -91,11 +103,15 @@ public class PlayerInventory : MonoBehaviour
         else container.setFocusEmpty(true);
     }
 
-    void unregisterContainer(){
-        container.setFocus(false);
-        raycastObject = null;
-        container = null;
+
+    void lootRegisteredContainer(){
+        if(container == null || !container.hasLoot()) return;
+        container.loot(this);
+        // container.lootAll(inventory);
+        if(!container.hasLoot()) unregisterContainer(); //TODO: need to update has loot to check with the server somehow
     }
+
+
 
 
     

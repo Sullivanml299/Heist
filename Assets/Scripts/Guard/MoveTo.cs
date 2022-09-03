@@ -78,7 +78,7 @@ public class MoveTo : NetworkBehaviour {
     }
 
     void stateChange(GUARD_STATES oldState, GUARD_STATES newState){
-        print("StateChange " + newState);
+        // print("StateChange " + newState);
         switch(newState){
             case GUARD_STATES.Patrolling:
                 setSpeed(walkSpeed);
