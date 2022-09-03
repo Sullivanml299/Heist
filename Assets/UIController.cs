@@ -1,14 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class UIController : MonoBehaviour
 {
     public GameObject lootNotification;
+    [Header("Timer")]
     public GameObject Timer;
     public TMP_Text minutes;
     public TMP_Text seconds;
+
+    [Header("End Game Screen")]
+    public GameObject endGame;
+    public TMP_Text WinnerName;
+    public TMP_Text hostScore;
+    public TMP_Text clientScore;
+    public Image hostIcon;
+    public Image clientIcon;
+
+
     private int activeNotificationCount = 0;
 
     // void Start(){
@@ -40,4 +52,29 @@ public class UIController : MonoBehaviour
     public void enableTimer(bool value){
         Timer.SetActive(value);
     }
+
+    public void enableEndGame(bool value){
+        endGame.SetActive(value);
+    }
+
+    public void setWinner(string name){
+        WinnerName.text = name;
+    }
+
+    public void setHostScore(int score){
+        hostScore.text = score.ToString();
+    }
+
+    public void setClientScore(int score){
+        clientScore.text = score.ToString();
+    }
+
+    public void setHostIcon(Sprite sprite){
+        hostIcon.sprite = sprite;
+    }
+
+    public void setClientIcon(Sprite sprite){
+        clientIcon.sprite = sprite;
+    }
+
 }

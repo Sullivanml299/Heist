@@ -12,6 +12,7 @@ public class PlayerHeist : NetworkBehaviour
     public GuardNetworkBehaviour guardController;
     public NetworkTransform localTransform;
     PlayerSkills playerSkills;
+    GameController gameController;
     Vector3 startPosition;
     bool returnHome = false;
 
@@ -24,6 +25,8 @@ public class PlayerHeist : NetworkBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         playerSkills = GetComponent<PlayerSkills>();
         localTransform = GetComponent<NetworkTransform>();
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
+        gameController.registerPlayer(gameObject, isServer);
     }
 
     void LateUpdate(){

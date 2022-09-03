@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6509434, g: 0.6374182, b: 0.5500559, a: 1}
+  m_Color: {r: 0.9150943, g: 0.7975736, b: 0.55744284, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -169,6 +169,7 @@ MonoBehaviour:
   scrollSpeed: 100
   lootIcon: {fileID: 8061035704155612635}
   lootName: {fileID: 8061035704883347662}
+  mainUI: {fileID: 0}
 --- !u!1 &8061035704883347648
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,14 +238,14 @@ MonoBehaviour:
   m_text: LootName
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 42df1c7856584b6b8db9a509b6b10074, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278318591
-  m_fontColor: {r: 1, g: 0.961249, b: 0.005390823, a: 1}
+    rgba: 4278229247
+  m_fontColor: {r: 1, g: 0.595663, b: 0, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 0
   m_fontColorGradient:
