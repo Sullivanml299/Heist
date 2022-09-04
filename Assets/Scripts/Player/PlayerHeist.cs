@@ -26,7 +26,7 @@ public class PlayerHeist : NetworkBehaviour
         playerSkills = GetComponent<PlayerSkills>();
         localTransform = GetComponent<NetworkTransform>();
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
-        gameController.registerPlayer(gameObject, isServer);
+        gameController.registerPlayer(gameObject, (isLocalPlayer && isServer));
     }
 
     void LateUpdate(){

@@ -12,4 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986c6631e487d5f4b8c4d7ef22c1ce1e, type: 3}
   m_Name: ContainerSettings_desk
   m_EditorClassIdentifier: 
-  possibleLoot: []
+  possibleLoot:
+  - loot: {fileID: 11400000, guid: 2e4e77498f216ed4fb2f7cbc77a8e126, type: 2}
+    spawnRate: 0.1
+  - loot: {fileID: 11400000, guid: 41288cb234b956746960044b77b0361d, type: 2}
+    spawnRate: 0.1
+  - loot: {fileID: 11400000, guid: 427be34d94b0cab42a4c9801d6d63df2, type: 2}
+    spawnRate: 0.3
+  - loot: {fileID: 11400000, guid: 939af329e502f8c4b951fc5ed132e10c, type: 2}
+    spawnRate: 0.5
+  minItemCount: 1
+  maxItemCount: 5

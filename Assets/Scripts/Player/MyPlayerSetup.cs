@@ -22,6 +22,7 @@ public class MyPlayerSetup : NetworkBehaviour
         GetComponent<PlayerInput>().enabled = true;
         GetComponent<CharacterController>().enabled = true;
         GetComponent<ThirdPersonController>().enabled =  true;
+        GetComponent<PlayerInventory>().enabled =  true;
 
     }
 
@@ -35,6 +36,7 @@ public class MyPlayerSetup : NetworkBehaviour
             Destroy(GetComponent<ThirdPersonController>());
             Destroy(GetComponent<PlayerInput>());
             // Destroy(GetComponent<CharacterController>());
+            // Destroy(GetComponent<PlayerInventory>());
         }
     }
 }

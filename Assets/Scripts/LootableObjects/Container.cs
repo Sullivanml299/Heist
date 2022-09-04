@@ -60,24 +60,24 @@ public class Container : NetworkBehaviour
     void serverSetUp(){
         seed = Random.Range(0,1000000);
         fillContainer(seed);
-        printContents();
+        // printContents();
     }
 
     void seedSynced(int oldSeed, int newSeed){
-        print("SyncSeed!");
+        // print("SyncSeed!");
         if(!isServer) fillContainer(newSeed);
     }
 
     void countSynced(int oldCount, int newCount){
-        print("SyncCount");
+        // print("SyncCount");
         if(!isServer && newCount<=0 && localInventory != null) localInventory.unregisterContainer(this); 
     }
 
     void fillContainer(int seed = 0){
-        print("FILLING");
+        // print("FILLING");
         Random.InitState(seed);
         itemCount = Random.Range(settings.minItemCount, settings.maxItemCount+1); //add 1 because int version is exclusive on high end
-        print("COUNT; " + itemCount);
+        // print("COUNT; " + itemCount);
         float roll;
         float currentProbability;
 

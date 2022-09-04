@@ -57,7 +57,7 @@ public class PlayerSkills : NetworkBehaviour
     }
 
     public void setStealth(bool value){
-        print("SetStealth " + value);
+        // print("SetStealth " + value);
         stealthActive = value;
         if(value) activateStealthMaterials();
         else deactivateStealthMaterials();

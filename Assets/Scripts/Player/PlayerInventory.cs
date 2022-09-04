@@ -61,7 +61,7 @@ public class PlayerInventory : MonoBehaviour
 
 
         Debug.DrawRay(transform.position + Vector3.up * raycastYOffset, transform.forward * minLootDistance, Color.blue);
-        // print(_input.loot);
+        // print("INPUT " + _input.loot);
         if(_input.loot && container != null) {
             // print("Looting");
             _animator.SetBool(_animIDLootLow, true);
@@ -86,6 +86,10 @@ public class PlayerInventory : MonoBehaviour
 
     public void containerWasEmpty(){
         print("container is empty");
+    }
+
+    public bool hasItem(Loot item){
+        return inventory.Contains(item);
     }
 
     public void unregisterContainer(Container oldContainer = null){

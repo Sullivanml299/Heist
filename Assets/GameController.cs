@@ -9,6 +9,7 @@ public class GameController : NetworkBehaviour
     public bool useTimer = false;
     public float maxGameTime = 1f;
     public bool gameStarted = false;
+    public Loot objective;
 
 
     UIController mainUI;
@@ -59,13 +60,41 @@ public class GameController : NetworkBehaviour
         gameStarted = true;
     }
 
-    public void endGame(){
+    public void callEndGame(){
+        if(isServer) endGame();
+        else CmdEndGame();
+    }
+
+    public Loot gameObjective(){
+        return objective;
+    }
+
+    private void endGame(){
+        print("ENDGAME");
         endGameActive = true;
         var hostInventory = getHostInventory();
         hostScore = calculateScore(hostInventory);
+        print(host);
+        print(hostInventory.Count);
+        print("HostSCore " + hostScore);
         mainUI.enableEndGame(true);
         mainUI.setHostScore(hostScore);
         RpcSetEndGame(hostScore);
+    }
+
+    void setWinner(int hostScore, int clientScore){
+        string winner;
+        if(hostScore == clientScore){
+            winner = "TIE";
+        }
+        else if(hostScore == Mathf.Max(hostScore, clientScore)){
+            winner = "HOST";
+        }
+        else{
+            winner = "CLIENT!";
+        }
+
+        mainUI.setWinner(winner);
     }
 
     List<Loot> getHostInventory(){
@@ -77,6 +106,7 @@ public class GameController : NetworkBehaviour
     }
 
     public void registerPlayer(GameObject player, bool isHost){
+        print("Register " + isHost); 
         if(isHost) host = player;
         else client = player;
     }
@@ -109,18 +139,10 @@ public class GameController : NetworkBehaviour
         }
     }
 
-    void setWinner(int hostScore, int clientScore){
-        string winner;
-        if(hostScore == clientScore){
-            winner = "TIE";
-        }
-        else if(hostScore == Mathf.Max(hostScore, clientScore)){
-            winner = "HOST";
-        }
-        else{
-            winner = "CLIENT!";
-        }
-
-        mainUI.setWinner(winner);
+    [Command(requiresAuthority = false)]
+    void CmdEndGame(){
+        print("COMMAND");
+        endGame();
     }
+
 }
