@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d42f50abbe031f4ab3dd0c4edc5c332, type: 3}
   m_Name: PocketWatch
   m_EditorClassIdentifier: 
-  lootName: 
-  value: 0
-  itemIcon: {fileID: 0}
+  lootName: Pocket Watch
+  value: 30
+  itemIcon: {fileID: 21300000, guid: 9285651df72115f468bf7082166691b3, type: 3}
   itemObject: {fileID: 0}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootName: Gold Pouch
   value: 20
-  itemIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  itemIcon: {fileID: 21300000, guid: 9285651df72115f468bf7082166691b3, type: 3}
   itemObject: {fileID: 0}
