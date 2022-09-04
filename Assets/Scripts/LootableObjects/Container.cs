@@ -7,8 +7,8 @@ using Mirror;
 public class Container : NetworkBehaviour
 {
     public ContainerSettings settings;
-    public int minItemCount = 1;
-    public int maxItemCount = 5;
+    // public int minItemCount = 1;
+    // public int maxItemCount = 5;
     public List<Loot> contents = new List<Loot>();
     public Outline outline;
     [SyncVar(hook = nameof(countSynced))]
@@ -27,8 +27,7 @@ public class Container : NetworkBehaviour
             outline = GetComponent<Outline>();
             setFocus(false);
         }
-
-       if(isServer) serverSetUp();
+        if(isServer) serverSetUp();
     }
 
 
@@ -77,7 +76,7 @@ public class Container : NetworkBehaviour
     void fillContainer(int seed = 0){
         print("FILLING");
         Random.InitState(seed);
-        itemCount = Random.Range(minItemCount, maxItemCount+1); //add 1 because int version is exclusive on high end
+        itemCount = Random.Range(settings.minItemCount, settings.maxItemCount+1); //add 1 because int version is exclusive on high end
         print("COUNT; " + itemCount);
         float roll;
         float currentProbability;
