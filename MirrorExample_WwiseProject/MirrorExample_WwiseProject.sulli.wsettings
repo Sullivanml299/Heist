@@ -3,7 +3,18 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{089EA00A-A89A-4581-A5BE-DE714E414E12}">
 			<PropertyList>
-				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\sulli\Desktop\Unity Projects\MirrorExample\Assets\StarterAssets\ThirdPersonController\Character\Sfx\"/>
+				<Property Name="Event Action List\{0E7FAC61-DFEE-490D-A611-411CAC911082}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2800489D-1429-4906-A651-374D1C8250D6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{741EA922-07ED-4617-9375-D2C43E070998}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7BA78DAD-B494-46CB-A8DC-05EA1086D4DF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B56C18D8-5C7D-486E-BDFF-BB20745D1A66}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B8734998-F782-483E-8752-74294FB88377}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C86B73C0-E3B7-46C4-A0E2-9E635C23A756}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D1F7FF35-EF7A-4527-AA08-7BBADC8E985D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D288289F-F084-44C0-85E6-667A8DF94466}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D44FF74C-73D4-4D9B-984B-EEF5D7E11797}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="EventView\FilterMode1" Type="int32" Value="24"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
@@ -19,8 +30,11 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="WGbLaoy+6k6Vz+Sp0DM3xw=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="BkoLrDf5LECSRPAPY3WYJw=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="8D7RNZqIsUOsfAyzqG/ofAErqfr/////eTdxT/NKCkGKB55oX3ZySQErqfr/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="eTdxT/NKCkGKB55oX3ZySQErH/X/////8D7RNZqIsUOsfAyzqG/ofAErH/X/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -52,19 +66,19 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="x3s4UxkUSEKX7yErtEFAgA=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="ysoaPwynd0aQAxJRKD2upg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_9_1" Type="string" Value=""/>
-				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
+				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="uC+uT9JWdUqhUS8LjZWAvA=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</Value>
+						<Value Platform="Windows">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">

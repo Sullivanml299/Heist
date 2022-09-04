@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b82fae4fd256754aa1512f0b8d9580bc
     GuidInternal: 
-    m_lastTime: -8585393559000649294
-    List: []
+    m_lastTime: -8585393389958151614
+    List:
+    - name: Main
+      guid: 064a0bac37f92c409244f00f63759827
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b82fae4fd256754aa1512f0b8d9580bc
+      - ElementName: Main
+        ObjectType: 7
+        guid: 064a0bac37f92c409244f00f63759827
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: caca1a3f0ca7774690031251283daea6
     GuidInternal: 
-    m_lastTime: -8585393559002448813
-    List: []
+    m_lastTime: -8585393389958025680
+    List:
+    - name: Play_Footsteps
+      guid: 61ac7f0eeedf0d49a611411cac911082
+      id: 3854155799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caca1a3f0ca7774690031251283daea6
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+        guid: 61ac7f0eeedf0d49a611411cac911082
+      Path: Events\Default Work Unit\Play_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.345833
+      minDuration: 0.264333
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +170,7 @@ MonoBehaviour:
     m_lastTime: -8585393559002186469
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 01000000040000000500000006000000070000000b0000000c000000140000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

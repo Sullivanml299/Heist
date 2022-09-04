@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\sulli\Desktop\Unity Projects\MirrorExample\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1661465593">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" DurationType="OneShot" DurationMin="0.264333" DurationMax="0.345833">
+					<IncludedMemoryFiles>
+						<File Id="34010701" Language="SFX">
+							<ShortName>Player_Footstep_07.wav</ShortName>
+							<Path>SFX\Player_Footstep_07_10C4C929.wem</Path>
+						</File>
+						<File Id="95138178" Language="SFX">
+							<ShortName>Player_Footstep_09.wav</ShortName>
+							<Path>SFX\Player_Footstep_09_10C4C929.wem</Path>
+						</File>
+						<File Id="445019842" Language="SFX">
+							<ShortName>Player_Footstep_02.wav</ShortName>
+							<Path>SFX\Player_Footstep_02_10C4C929.wem</Path>
+						</File>
+						<File Id="546885940" Language="SFX">
+							<ShortName>Player_Footstep_04.wav</ShortName>
+							<Path>SFX\Player_Footstep_04_10C4C929.wem</Path>
+						</File>
+						<File Id="742224721" Language="SFX">
+							<ShortName>Player_Footstep_06.wav</ShortName>
+							<Path>SFX\Player_Footstep_06_10C4C929.wem</Path>
+						</File>
+						<File Id="842820062" Language="SFX">
+							<ShortName>Player_Footstep_05.wav</ShortName>
+							<Path>SFX\Player_Footstep_05_10C4C929.wem</Path>
+						</File>
+						<File Id="848520798" Language="SFX">
+							<ShortName>Player_Footstep_08.wav</ShortName>
+							<Path>SFX\Player_Footstep_08_10C4C929.wem</Path>
+						</File>
+						<File Id="947047952" Language="SFX">
+							<ShortName>Player_Footstep_10.wav</ShortName>
+							<Path>SFX\Player_Footstep_10_10C4C929.wem</Path>
+						</File>
+						<File Id="1027588880" Language="SFX">
+							<ShortName>Player_Footstep_01.wav</ShortName>
+							<Path>SFX\Player_Footstep_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1052872673" Language="SFX">
+							<ShortName>Player_Footstep_03.wav</ShortName>
+							<Path>SFX\Player_Footstep_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
