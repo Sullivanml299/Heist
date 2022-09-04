@@ -8,7 +8,18 @@
 						<Action Name="" ID="{23B03358-98AC-43C1-B8D0-A1620C34925F}" ShortID="74720816">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{7406F4D0-8301-4A55-9B0F-F6C9645843BD}" WorkUnitID="{53387BC7-1419-4248-97EF-212BB4414080}"/>
+									<ObjectRef Name="Footsteps_carpet" ID="{7406F4D0-8301-4A55-9B0F-F6C9645843BD}" WorkUnitID="{53387BC7-1419-4248-97EF-212BB4414080}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footsetps_Switch" ID="{1A38F805-6601-4A9A-A24D-D9EE76810ACC}">
+					<ChildrenList>
+						<Action Name="" ID="{7DEC030C-6EB7-4C7D-848E-6960CCA4AA53}" ShortID="229432358">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footstep_SwitchContainer" ID="{A443FCC0-B8DF-49E5-AA1C-6CA7255FED0B}" WorkUnitID="{53387BC7-1419-4248-97EF-212BB4414080}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

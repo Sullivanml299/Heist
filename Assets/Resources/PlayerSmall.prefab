@@ -486,11 +486,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1603708042996209431, guid: 5261159b1b2631641802ad365be9ff5d, type: 3}
   m_PrefabInstance: {fileID: 83341436708540942}
   m_PrefabAsset: {fileID: 0}
---- !u!143 &5386983654610240979 stripped
-CharacterController:
-  m_CorrespondingSourceObject: {fileID: 5470324953812588509, guid: 5261159b1b2631641802ad365be9ff5d, type: 3}
-  m_PrefabInstance: {fileID: 83341436708540942}
-  m_PrefabAsset: {fileID: 0}
 --- !u!137 &4189063029258259501 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4254384567483129379, guid: 5261159b1b2631641802ad365be9ff5d, type: 3}
@@ -508,20 +503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ff72edb12cf4e41be615259225f2b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FootstepAudioVolume: 0.3
-  FootstepAudioClips:
-  - {fileID: 8300000, guid: 72f526a6a9890f643a88e85a61c86c8a, type: 3}
-  - {fileID: 8300000, guid: 85016e0f2b01da248b9663dd49a161b0, type: 3}
-  - {fileID: 8300000, guid: 186de84b3207156479abe98f4958fed0, type: 3}
-  - {fileID: 8300000, guid: 1a91fcd19acf1e54bba0945d9f390849, type: 3}
-  - {fileID: 8300000, guid: 14e8a8d2158bec840b56c54f5266e692, type: 3}
-  - {fileID: 8300000, guid: 29841e7d5bbfb5b419c9ad16ca8bc4c1, type: 3}
-  - {fileID: 8300000, guid: dd1af302b8902684d9381de1f2d3a5af, type: 3}
-  - {fileID: 8300000, guid: 67c8b33e424ccdc4486edf538ab91c5a, type: 3}
-  - {fileID: 8300000, guid: 274649b0e221539409070ebf6c18918b, type: 3}
-  - {fileID: 8300000, guid: a3194b8bbc96ef84fab1f98f4b7dae3e, type: 3}
-  LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
-  _controller: {fileID: 5386983654610240979}
+  footstepSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a4f1ec87fed63434784f6e7034e457f1, type: 2}
 --- !u!114 &-4660801272573380548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,8 +522,10 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   playerController: {fileID: 0}
+  thirdPersonController: {fileID: 0}
   guard: {fileID: 0}
   guardController: {fileID: 0}
+  localTransform: {fileID: 0}
 --- !u!114 &-4106349207850537254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49027667d18cd2845b0bd22408047784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   _renderer: {fileID: 4189063029258259501}
   stealthMaterial: {fileID: 2100000, guid: 5df4acd2054c9db43b5d70b1aa798f73, type: 2}
   normalMaterials: []

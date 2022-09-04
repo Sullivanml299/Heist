@@ -1,15 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
+	792199384	Play_Footsetps_Switch			\Default Work Unit\Play_Footsetps_Switch	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	361622075	FootstepSwitch			\Default Work Unit\FootstepSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	2058049674	Wood	FootstepSwitch			
+	2412606308	Carpet	FootstepSwitch			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	34010701	Player_Footstep_07	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_07		28412
-	95138178	Player_Footstep_09	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_09		33264
-	445019842	Player_Footstep_02	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_02		26332
-	546885940	Player_Footstep_04	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_04		31780
-	742224721	Player_Footstep_06	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_06		29932
-	842820062	Player_Footstep_05	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_05		32068
-	848520798	Player_Footstep_08	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_08		30778
-	947047952	Player_Footstep_10	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_10		30934
-	1027588880	Player_Footstep_01	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_01		25440
-	1052872673	Player_Footstep_03	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Player_Footstep_03		29012
+	34010701	Player_Footstep_07	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_07		28412
+	95138178	Player_Footstep_09	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_09		33264
+	445019842	Player_Footstep_02	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_02		26332
+	546885940	Player_Footstep_04	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_04		31780
+	742224721	Player_Footstep_06	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_06		29932
+	842820062	Player_Footstep_05	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_05		32068
+	848520798	Player_Footstep_08	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_08		30778
+	947047952	Player_Footstep_10	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_10		30934
+	1027588880	Player_Footstep_01	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_01		25440
+	1052872673	Player_Footstep_03	C:\Users\sulli\Desktop\Unity Projects\MirrorExample\MirrorExample_WwiseProject\.cache\Mac\SFX\Player_Footstep_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep_SwitchContainer\Footsteps_carpet\Player_Footstep_03		29012
 

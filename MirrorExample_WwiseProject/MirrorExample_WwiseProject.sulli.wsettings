@@ -5,7 +5,9 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\sulli\Desktop\Unity Projects\MirrorExample\Assets\StarterAssets\ThirdPersonController\Character\Sfx\"/>
 				<Property Name="Event Action List\{0E7FAC61-DFEE-490D-A611-411CAC911082}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1A38F805-6601-4A9A-A24D-D9EE76810ACC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2800489D-1429-4906-A651-374D1C8250D6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{481C7201-27DE-441E-B940-245A253286AF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{741EA922-07ED-4617-9375-D2C43E070998}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7BA78DAD-B494-46CB-A8DC-05EA1086D4DF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B56C18D8-5C7D-486E-BDFF-BB20745D1A66}\x64_Expand States" Type="string" Value=""/>

@@ -8,6 +8,7 @@ TagManager:
   - Guard
   - Container
   - StealthPlayer
+  - CarpetTrigger
   layers:
   - Default
   - TransparentFX
