@@ -9,6 +9,12 @@
 						<Switch Name="Carpet" ID="{5D0D6E95-933D-4AE8-B0F8-8149A7BC4450}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="MusicSwitch" ID="{1EA29EF3-D90A-49C4-BC65-9A55FB6730E8}">
+					<ChildrenList>
+						<Switch Name="Normal" ID="{A8C2A592-158E-484D-ABBE-5E121C45E90F}"/>
+						<Switch Name="Chase" ID="{C5691A7B-F2C5-4AEF-98A4-9266A7DD957F}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

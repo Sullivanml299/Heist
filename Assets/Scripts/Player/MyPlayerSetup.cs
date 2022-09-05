@@ -24,6 +24,14 @@ public class MyPlayerSetup : NetworkBehaviour
         GetComponent<ThirdPersonController>().enabled =  true;
         GetComponent<PlayerInventory>().enabled =  true;
 
+        GameObject.Find("MusicController").GetComponent<MusicController>().startMusic(isServer);
+
+    }
+
+    public override void OnStopClient()
+    {
+        base.OnStopClient();
+        GameObject.Find("MusicController").GetComponent<MusicController>().stopMusic(isServer);
     }
 
     //This is called anytime a networked object is spawned on a connected client.

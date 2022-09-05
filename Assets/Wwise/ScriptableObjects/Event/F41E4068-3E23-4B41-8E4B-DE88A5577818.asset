@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d42f50abbe031f4ab3dd0c4edc5c332, type: 3}
-  m_Name: FancyPlates
+  m_Script: {fileID: 11500000, guid: 98983d40ec8fb45479535f0054455913, type: 3}
+  m_Name: F41E4068-3E23-4B41-8E4B-DE88A5577818
   m_EditorClassIdentifier: 
-  lootName: Fancy PLates
-  value: 15
-  itemIcon: {fileID: 0}
-  itemObject: {fileID: 0}
+  objectName: Music
+  id: 3991942870
+  guid: F41E4068-3E23-4B41-8E4B-DE88A5577818

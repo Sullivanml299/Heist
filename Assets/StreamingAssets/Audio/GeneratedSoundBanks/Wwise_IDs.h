@@ -13,8 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAY_FOOTSETPS_SWITCH = 792199384U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_GOTITEM = 3215464965U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -30,7 +32,23 @@ namespace AK
             } // namespace SWITCH
         } // namespace FOOTSTEPSWITCH
 
+        namespace MUSICSWITCH
+        {
+            static const AkUniqueID GROUP = 1445037870U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CHASE = 417490929U;
+                static const AkUniqueID NORMAL = 1160234136U;
+            } // namespace SWITCH
+        } // namespace MUSICSWITCH
+
     } // namespace SWITCHES
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID CYMBAL_SWELL = 2077047193U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

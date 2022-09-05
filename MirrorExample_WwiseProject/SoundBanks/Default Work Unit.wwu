@@ -7,6 +7,8 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Footsteps" ID="{0E7FAC61-DFEE-490D-A611-411CAC911082}" WorkUnitID="{3F1ACACA-A70C-4677-9003-1251283DAEA6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsetps_Switch" ID="{1A38F805-6601-4A9A-A24D-D9EE76810ACC}" WorkUnitID="{3F1ACACA-A70C-4677-9003-1251283DAEA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{F41E4068-3E23-4B41-8E4B-DE88A5577818}" WorkUnitID="{3F1ACACA-A70C-4677-9003-1251283DAEA6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_GotItem" ID="{67413DDE-2CB2-4F32-B31F-04868AD8CE87}" WorkUnitID="{3F1ACACA-A70C-4677-9003-1251283DAEA6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music" ID="{F41E4068-3E23-4B41-8E4B-DE88A5577818}">
+					<ChildrenList>
+						<Action Name="" ID="{5106E98D-DFB5-4C50-A07B-BEA99187EE96}" ShortID="643423929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NormalMusicContainer" ID="{AD78361B-81C3-4236-9685-40D46804553D}" WorkUnitID="{443E7733-F079-4F5C-92D6-7A5D4FDEFCA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GotItem" ID="{67413DDE-2CB2-4F32-B31F-04868AD8CE87}">
+					<ChildrenList>
+						<Action Name="" ID="{8CE624CA-A1A8-45BB-A293-A249075514FF}" ShortID="405817013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GotItem" ID="{6B0ACEF9-C7D5-43E6-9BF9-11D20627ADB2}" WorkUnitID="{53387BC7-1419-4248-97EF-212BB4414080}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

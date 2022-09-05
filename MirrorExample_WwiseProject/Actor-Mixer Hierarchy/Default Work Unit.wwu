@@ -49,6 +49,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -316,6 +321,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -586,6 +596,1170 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Folder Name="SoundEffects" ID="{6FE6E576-85CC-4A71-A447-89CB13D515CF}" ShortID="324593395">
+					<ChildrenList>
+						<Sound Name="DM-CGS-01" ID="{A668E09C-205D-44B4-BDC1-DFE6E90EAA33}" ShortID="745497063">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-01" ID="{B8F2223D-A610-4E20-9336-16F4A210CC6A}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="599516414"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-01" ID="{B8F2223D-A610-4E20-9336-16F4A210CC6A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-02" ID="{B8CE2C84-D013-4244-BEF9-3EE3EEF3FC89}" ShortID="264988922">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-02" ID="{0E955163-7ED1-42C9-AAC4-BA763F928D7B}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="508670475"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-02" ID="{0E955163-7ED1-42C9-AAC4-BA763F928D7B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-03" ID="{D28CDA7C-7174-406E-8355-256E5E40300D}" ShortID="222441581">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-03" ID="{85F9134C-F46A-477F-A69F-8FC0B6CB0F49}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1045194281"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-03" ID="{85F9134C-F46A-477F-A69F-8FC0B6CB0F49}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-04" ID="{607405FF-EC18-496C-83C3-56A504CEE36D}" ShortID="661439783">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-04" ID="{7E6ADA48-4E2B-429C-A43E-8BCAF6089B14}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1009031837"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-04" ID="{7E6ADA48-4E2B-429C-A43E-8BCAF6089B14}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-05" ID="{990A7A5B-6B45-4176-B9D4-AFC784B4BAE0}" ShortID="33545309">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-05" ID="{DD832DB7-E09D-4CAF-85E4-F56C672430B5}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="952259542"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-05" ID="{DD832DB7-E09D-4CAF-85E4-F56C672430B5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-06" ID="{911E58FA-BD32-4EB0-93FC-B19E6CA010BB}" ShortID="362998432">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-06" ID="{029463A2-9D8D-43C8-ADCB-921932E739F3}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="935216604"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-06" ID="{029463A2-9D8D-43C8-ADCB-921932E739F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-07" ID="{FD309D8A-E863-4CF2-BE0E-7C56B2E29894}" ShortID="827257916">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-07" ID="{E180B0D6-72D9-4961-BC8F-D8F0B8C30738}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="233362618"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-07" ID="{E180B0D6-72D9-4961-BC8F-D8F0B8C30738}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-08" ID="{E2AEF626-4200-4D31-AF53-BB081EF70DDE}" ShortID="907940347">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-08" ID="{E65B5208-9F71-4502-B272-FFA7E3156E9B}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="392349967"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-08" ID="{E65B5208-9F71-4502-B272-FFA7E3156E9B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-09" ID="{0FA39F9F-DCDF-4D01-90D2-9C4AE24701F0}" ShortID="613101397">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-09" ID="{BDA81D04-5881-43D1-85C7-6CDD2C78D8BF}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-09.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="235307599"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-09" ID="{BDA81D04-5881-43D1-85C7-6CDD2C78D8BF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-10" ID="{E82AB943-9520-4194-AD0E-F08479510612}" ShortID="591558423">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-10" ID="{5274E97F-C44E-4187-87F4-DA05C91AECB5}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="447757763"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-10" ID="{5274E97F-C44E-4187-87F4-DA05C91AECB5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-11" ID="{BD0AF0F2-A504-47A3-BE5F-ECF87F47D5E4}" ShortID="36418501">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-11" ID="{51F31D83-48FA-4D96-BDC7-27910256EE1E}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-11.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1012192235"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-11" ID="{51F31D83-48FA-4D96-BDC7-27910256EE1E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-12" ID="{89711C7F-117B-43ED-B2AD-AB8A8383B4F6}" ShortID="29952959">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-12" ID="{C3A4E647-D999-47A4-9FC9-D79BA326B5D8}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-12.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="334714485"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-12" ID="{C3A4E647-D999-47A4-9FC9-D79BA326B5D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-13" ID="{F7FF2E16-BB01-4007-9B98-A2748B9B03D2}" ShortID="812999714">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-13" ID="{F1160C78-7259-4427-9961-C908DEC50D80}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-13.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="27666909"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-13" ID="{F1160C78-7259-4427-9961-C908DEC50D80}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-14" ID="{D0598780-7F3B-468C-89F7-96558EF2086E}" ShortID="701795156">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-14" ID="{CD1C15A5-4925-4792-AB0D-32E79FE1E4DC}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-14.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="733476836"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-14" ID="{CD1C15A5-4925-4792-AB0D-32E79FE1E4DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-15" ID="{4C337D64-5AAD-4A54-8772-FA2AE620E8E0}" ShortID="413442586">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-15" ID="{BD918DC4-5D4F-4DBC-9E3D-297A7914E611}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-15.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="688156151"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-15" ID="{BD918DC4-5D4F-4DBC-9E3D-297A7914E611}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-16" ID="{ECE7EB70-41B8-4371-83F2-E8B7426C71A9}" ShortID="707447398">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-16" ID="{DD3EF049-5D8A-4085-B6CE-38CB18B5A066}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-16.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="289101185"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-16" ID="{DD3EF049-5D8A-4085-B6CE-38CB18B5A066}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-17" ID="{0D0A8E18-0F38-4736-8728-7BE270DFD90C}" ShortID="209898749">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-17" ID="{37F61A54-95C4-437F-A6AE-60D410D4F031}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-17.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="164030841"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-17" ID="{37F61A54-95C4-437F-A6AE-60D410D4F031}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-18" ID="{778BE177-434E-4446-9FCF-462D7A0A4FEE}" ShortID="943708891">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-18" ID="{55325232-A0BE-42E0-AB89-8AE648E0A884}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-18.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="778878120"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-18" ID="{55325232-A0BE-42E0-AB89-8AE648E0A884}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-19" ID="{256C0936-F3DF-473B-B4F2-D18A25C85CAC}" ShortID="565829545">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-19" ID="{8A9CAB88-8657-45F6-A250-927A5D49DA1E}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-19.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="492222211"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-19" ID="{8A9CAB88-8657-45F6-A250-927A5D49DA1E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-20" ID="{0870F0CD-68B2-4AEE-A77B-D584CBC7C7F6}" ShortID="191923106">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-20" ID="{C3E4660A-B102-4FCE-B22D-748190DCBB94}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-20.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="390102880"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-20" ID="{C3E4660A-B102-4FCE-B22D-748190DCBB94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-21" ID="{AFEBFD12-3A90-45A1-B69B-F5794D2537B8}" ShortID="772085045">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-21" ID="{C54718F8-75F7-4EC8-B240-4D69FE9BB353}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-21.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="420453753"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-21" ID="{C54718F8-75F7-4EC8-B240-4D69FE9BB353}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-22" ID="{48047399-691F-453A-974C-42E3249B8BF9}" ShortID="26905367">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-22" ID="{46801531-1367-4892-82BA-AF44C1976682}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-22.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="714507657"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-22" ID="{46801531-1367-4892-82BA-AF44C1976682}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-23" ID="{D8AC5785-8D61-4EEE-80CE-F939BF569241}" ShortID="99354109">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-23" ID="{E3B8C092-5FD5-48A0-8505-75D48D52A473}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-23.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="309545174"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-23" ID="{E3B8C092-5FD5-48A0-8505-75D48D52A473}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-24" ID="{41EFE826-1594-4DD4-9F89-B0479D26811E}" ShortID="810843628">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-24" ID="{2DFC63E1-7E57-48F3-BAC6-24EBEDF75575}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-24.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="286009266"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-24" ID="{2DFC63E1-7E57-48F3-BAC6-24EBEDF75575}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-25" ID="{1FC37C07-B3E1-4A02-8AE2-9A28B495BA08}" ShortID="586873024">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-25" ID="{C683AD61-366A-4185-B3D1-060556A98696}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-25.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="583809569"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-25" ID="{C683AD61-366A-4185-B3D1-060556A98696}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-26" ID="{3AD533CB-8FE6-4458-AB81-5029F22AA0AC}" ShortID="231809084">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-26" ID="{4BF338BE-2EEC-4373-8679-61F25C089967}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-26.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="998563680"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-26" ID="{4BF338BE-2EEC-4373-8679-61F25C089967}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-27" ID="{B18B5DEE-1401-4CD2-81DC-F4F6EF4FCC90}" ShortID="376322960">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-27" ID="{C29B7F36-E84F-468B-B3B0-D6EDCF8DEC02}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-27.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="724663450"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-27" ID="{C29B7F36-E84F-468B-B3B0-D6EDCF8DEC02}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-28" ID="{5E9AE38D-E734-4028-943C-E0293BDE13C9}" ShortID="848980579">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-28" ID="{4460510A-4942-42B8-8A93-2D3E9E52CF7B}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-28.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="699158471"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-28" ID="{4460510A-4942-42B8-8A93-2D3E9E52CF7B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-29" ID="{E2ED530F-9AA5-41EE-A0C9-491727C624EE}" ShortID="510544802">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-29" ID="{F5467889-92A2-46CE-9C93-D57590D03064}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-29.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="704117834"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-29" ID="{F5467889-92A2-46CE-9C93-D57590D03064}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-30" ID="{C9365D26-369A-44F8-89A8-041FFB833A7D}" ShortID="771818999">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-30" ID="{1E756BBA-7BC1-4036-AC6B-97B6252072F6}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-30.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="685751493"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-30" ID="{1E756BBA-7BC1-4036-AC6B-97B6252072F6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-31" ID="{6DCDCA82-136C-4325-874B-D220092B991B}" ShortID="371905514">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-31" ID="{378A662A-6A1F-424B-B180-67933D877460}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-31.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="76234628"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-31" ID="{378A662A-6A1F-424B-B180-67933D877460}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-32" ID="{DA359554-056A-4975-848F-B0D6867A0A1F}" ShortID="380621258">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-32" ID="{83E88F2B-F575-47CD-948E-DC26D67A1F07}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-32.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="36196866"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-32" ID="{83E88F2B-F575-47CD-948E-DC26D67A1F07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-33" ID="{7D1D8599-915A-4985-A9BD-8C9473BCF6BE}" ShortID="299216906">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-33" ID="{6128BBA8-9E36-4116-9934-5F6EE6C79264}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-33.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="232806066"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-33" ID="{6128BBA8-9E36-4116-9934-5F6EE6C79264}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-34" ID="{6E8F0DE5-B6D8-420F-B871-A09F5E9E6B6B}" ShortID="1064908026">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-34" ID="{A88F016B-ADC0-4A92-9A6F-E8E01108A9DA}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-34.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="322284235"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-34" ID="{A88F016B-ADC0-4A92-9A6F-E8E01108A9DA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-35" ID="{7C221791-9FC6-400E-8DC7-D53DC3B323FF}" ShortID="241232976">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-35" ID="{1742FD42-86E4-4C71-A1AD-FF60987F9D2E}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-35.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1035882174"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-35" ID="{1742FD42-86E4-4C71-A1AD-FF60987F9D2E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-36" ID="{DEC11C3C-DE0D-40E5-B0AE-EB01162FC9B1}" ShortID="138052545">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-36" ID="{7CAAEF37-1A98-40DE-B27C-A25899C83F14}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-36.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="474545818"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-36" ID="{7CAAEF37-1A98-40DE-B27C-A25899C83F14}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-37" ID="{4D4E4D8D-E95E-4620-B667-5883621E7238}" ShortID="387717322">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-37" ID="{EDB6D9E3-56B0-4371-A602-F585B966C283}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-37.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1065322537"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-37" ID="{EDB6D9E3-56B0-4371-A602-F585B966C283}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-38" ID="{F1573329-22EA-43E9-BE6F-413DBC28D3CE}" ShortID="472862225">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-38" ID="{46975FE6-15CD-47CD-AB11-CA05FB3C8B2A}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-38.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="67155097"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-38" ID="{46975FE6-15CD-47CD-AB11-CA05FB3C8B2A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-39" ID="{2BA41CC0-5D1D-4C11-94B1-92E0FBCE4206}" ShortID="618200807">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-39" ID="{A0C0600C-7590-424C-88B8-4102851E26F8}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-39.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="514790212"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-39" ID="{A0C0600C-7590-424C-88B8-4102851E26F8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-40" ID="{EE877921-9511-4496-9191-09C699F0CE14}" ShortID="777810035">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-40" ID="{78A93A27-A9A4-49E0-A941-61CED43D1855}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-40.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="964858597"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-40" ID="{78A93A27-A9A4-49E0-A941-61CED43D1855}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-41" ID="{94A01661-777F-40F9-BE6C-190EF47E0CDB}" ShortID="783050318">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-41" ID="{5F5B269B-3878-4A41-BAE9-95C2E6CC7D69}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-41.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="703550801"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-41" ID="{5F5B269B-3878-4A41-BAE9-95C2E6CC7D69}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-42" ID="{06BFE0C4-B5BA-4C61-90BF-BA3763B26D81}" ShortID="887640332">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-42" ID="{2A96B98F-C976-497D-A20C-E6649CEECB9A}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-42.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="626595010"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-42" ID="{2A96B98F-C976-497D-A20C-E6649CEECB9A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-43" ID="{EED2223F-95DC-49B6-9204-5D564CD8CDDC}" ShortID="418850878">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-43" ID="{6ADCC9A2-43BF-412C-A4E3-725819D26A38}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-43.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="648185749"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-43" ID="{6ADCC9A2-43BF-412C-A4E3-725819D26A38}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-44" ID="{85B22268-F51C-4E25-AA9C-1B3E37481959}" ShortID="909391602">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-44" ID="{3DCE2C6B-7DF5-429E-BF50-587E96AE1D7C}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-44.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="677150034"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-44" ID="{3DCE2C6B-7DF5-429E-BF50-587E96AE1D7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GotItem" ID="{6B0ACEF9-C7D5-43E6-9BF9-11D20627ADB2}" ShortID="458723997">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Chipmunk" ID="{54F9F04F-0D14-46AB-B38B-21CFD2EB46F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-45" ID="{4B1DEB2C-3CFE-41A3-B5CF-9DABD1F199D8}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-45.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="741338223"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-45" ID="{4B1DEB2C-3CFE-41A3-B5CF-9DABD1F199D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-46" ID="{EAB2C8A4-B0FA-4DCF-B41B-C4F85F42F75A}" ShortID="925319219">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-46" ID="{CE8BA12E-C95B-4EF9-8C97-BE126AE3840A}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-46.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="767610473"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-46" ID="{CE8BA12E-C95B-4EF9-8C97-BE126AE3840A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-47" ID="{6C2A876E-FA2F-48EC-AF93-2C6B8E4B6595}" ShortID="840835910">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-47" ID="{2F11ABC1-2D1F-4E05-A901-22629FEB7B90}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-47.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="678579106"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-47" ID="{2F11ABC1-2D1F-4E05-A901-22629FEB7B90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-48" ID="{7DA94935-5739-44C8-BF77-6AB5AAD017EE}" ShortID="30487490">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-48" ID="{C1E830F8-B45F-4309-8AC7-5C5A11CD7844}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-48.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="138858445"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-48" ID="{C1E830F8-B45F-4309-8AC7-5C5A11CD7844}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-49" ID="{5CBB7642-012E-4F4B-AE8C-C981D1AE3B35}" ShortID="509796073">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-49" ID="{2D01ADC7-8B59-4316-BA09-34E5B6EE461A}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-49.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="734075555"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-49" ID="{2D01ADC7-8B59-4316-BA09-34E5B6EE461A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DM-CGS-50" ID="{BDD3B3EC-4049-45E5-8720-A4668124A878}" ShortID="391958237">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81908570-2F29-48F5-A9A6-3903A056BC6D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6E1DD811-1B54-4A43-9467-02A5F72D3946}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DM-CGS-50" ID="{CD6892AD-ECA0-45A6-8A58-56DB0D1959F9}">
+									<Language>SFX</Language>
+									<AudioFile>DM-CGS-50.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="155694123"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DM-CGS-50" ID="{CD6892AD-ECA0-45A6-8A58-56DB0D1959F9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -11,17 +11,53 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4234552175">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1093675021">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3622634492">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="792199384" Name="Play_Footsetps_Switch" ObjectPath="\Events\Default Work Unit\Play_Footsetps_Switch" DurationType="OneShot" DurationMin="0.231449" DurationMax="0.477912">
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="111813129" Language="SFX">
+							<ShortName>Combat-B-Strings2_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-B-Strings2_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="272586668" Language="SFX">
+							<ShortName>Combat-A-Strings1_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-A-Strings1_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="491268834" Language="SFX">
+							<ShortName>Combat-A-StaccStrings2_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-A-StaccStrings2_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="568475483" Language="SFX">
+							<ShortName>Combat-B-StaccStrings1_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-B-StaccStrings1_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="602818187" Language="SFX">
+							<ShortName>Combat-A-StaccStrings1_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-A-StaccStrings1_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="623097379" Language="SFX">
+							<ShortName>Combat-B-Strings1_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-B-Strings1_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="771957956" Language="SFX">
+							<ShortName>Combat-B-StaccStrings2_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-B-StaccStrings2_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="909439036" Language="SFX">
+							<ShortName>Combat-A-Strings2_138bpm4-4_L8M-P0.wav</ShortName>
+							<Path>SFX\Combat-A-Strings2_138bpm4-4_L8M-P0_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="792199384" Name="Play_Footsetps_Switch" ObjectPath="\Events\Default Work Unit\Play_Footsetps_Switch" MaxAttenuation="25." DurationType="OneShot" DurationMin="0.231449" DurationMax="0.477912">
 					<IncludedMemoryFiles>
 						<File Id="34010701" Language="SFX">
 							<ShortName>Player_Footstep_07.wav</ShortName>
@@ -65,7 +101,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" DurationType="OneShot" DurationMin="0.365286" DurationMax="0.477912">
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" MaxAttenuation="25." DurationType="OneShot" DurationMin="0.365286" DurationMax="0.477912">
 					<IncludedMemoryFiles>
 						<File Id="34010701" Language="SFX">
 							<ShortName>Player_Footstep_07.wav</ShortName>
@@ -106,6 +142,14 @@
 						<File Id="1052872673" Language="SFX">
 							<ShortName>Player_Footstep_03.wav</ShortName>
 							<Path>SFX\Player_Footstep_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3215464965" Name="Play_GotItem" ObjectPath="\Events\Default Work Unit\Play_GotItem" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+					<IncludedMemoryFiles>
+						<File Id="741338223" Language="SFX">
+							<ShortName>DM-CGS-45.wav</ShortName>
+							<Path>SFX\DM-CGS-45_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -115,6 +159,12 @@
 					<Switches>
 						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\FootstepSwitch\Wood" GUID="{74209BD9-3C1A-41A9-95DA-F92131D23770}"/>
 						<Switch Id="2412606308" Name="Carpet" ObjectPath="\Switches\Default Work Unit\FootstepSwitch\Carpet" GUID="{5D0D6E95-933D-4AE8-B0F8-8149A7BC4450}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1445037870" Name="MusicSwitch" ObjectPath="\Switches\Default Work Unit\MusicSwitch" GUID="{1EA29EF3-D90A-49C4-BC65-9A55FB6730E8}">
+					<Switches>
+						<Switch Id="1160234136" Name="Normal" ObjectPath="\Switches\Default Work Unit\MusicSwitch\Normal" GUID="{A8C2A592-158E-484D-ABBE-5E121C45E90F}"/>
+						<Switch Id="417490929" Name="Chase" ObjectPath="\Switches\Default Work Unit\MusicSwitch\Chase" GUID="{C5691A7B-F2C5-4AEF-98A4-9266A7DD957F}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

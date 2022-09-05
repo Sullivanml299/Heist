@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: ContainerSettings_kitchen
   m_EditorClassIdentifier: 
   possibleLoot:
-  - loot: {fileID: 11400000, guid: ec6c697e30debe14aafeffd6c84f0781, type: 2}
-    spawnRate: 0.4
   - loot: {fileID: 11400000, guid: 24033de087795ff4f86fb58df7a725cd, type: 2}
-    spawnRate: 0.3
-  - loot: {fileID: 11400000, guid: 5910289f7471fa44891bffe86237b71d, type: 2}
-    spawnRate: 0.3
-  minItemCount: 2
-  maxItemCount: 4
+    spawnRate: 1
+  minItemCount: 1
+  maxItemCount: 3

@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: ContainerSettings_shelf
   m_EditorClassIdentifier: 
   possibleLoot:
-  - loot: {fileID: 11400000, guid: 08674154ed9b9dc429e81fdeee5c2305, type: 2}
+  - loot: {fileID: 11400000, guid: 939af329e502f8c4b951fc5ed132e10c, type: 2}
     spawnRate: 0.2
   - loot: {fileID: 11400000, guid: 7efbe98932d912c4dbde36233004e2be, type: 2}
     spawnRate: 0.3
-  - loot: {fileID: 11400000, guid: 36091163ea1f93a49b6adc00575fe886, type: 2}
+  - loot: {fileID: 11400000, guid: 93fd0bb9900ce6e4a9484cf42b321e68, type: 2}
     spawnRate: 0.1
-  - loot: {fileID: 11400000, guid: dd6226132e4ac184c986d45f715029bd, type: 2}
-    spawnRate: 0.4
+  - loot: {fileID: 11400000, guid: 123ec581d1e56a44bb9e4324a8046a69, type: 2}
+    spawnRate: 0.2
+  - loot: {fileID: 11400000, guid: 36091163ea1f93a49b6adc00575fe886, type: 2}
+    spawnRate: 0.2
   minItemCount: 1
   maxItemCount: 5

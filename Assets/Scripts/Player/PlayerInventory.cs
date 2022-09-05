@@ -77,7 +77,7 @@ public class PlayerInventory : MonoBehaviour
     }
 
     public void addItem(Loot loot){
-        print("Add ITEM");
+        // print("Add ITEM");
         inventory.Add(loot);
         mainUI.newNotification(loot);
         //TODO: add some message here;
@@ -93,7 +93,7 @@ public class PlayerInventory : MonoBehaviour
     }
 
     public void unregisterContainer(Container oldContainer = null){
-        print("Unregister " +( oldContainer != null && oldContainer != container));
+        // print("Unregister " +( oldContainer != null && oldContainer != container));
         if(oldContainer != null && oldContainer != container) return;
         container.setFocus(false);
         raycastObject = null;

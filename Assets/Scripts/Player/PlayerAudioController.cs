@@ -10,6 +10,7 @@ public class PlayerAudioController : MonoBehaviour
     // public CharacterController _controller;
     public AK.Wwise.Event footstepSFX;
 
+
     private void OnFootstep(AnimationEvent animationEvent)
     {
 
@@ -34,4 +35,6 @@ public class PlayerAudioController : MonoBehaviour
         //     AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
         // }
     }
+
+
 }

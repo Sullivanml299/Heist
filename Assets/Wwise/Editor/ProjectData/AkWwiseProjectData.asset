@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b82fae4fd256754aa1512f0b8d9580bc
     GuidInternal: 
-    m_lastTime: -8585392988414211014
+    m_lastTime: -8585391998964082607
     List:
     - name: Main
       guid: 064a0bac37f92c409244f00f63759827
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: caca1a3f0ca7774690031251283daea6
     GuidInternal: 
-    m_lastTime: -8585392996770270107
+    m_lastTime: -8585391998964400721
     List:
+    - name: Music
+      guid: 68401ef4233e414b8e4bde88a5577818
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caca1a3f0ca7774690031251283daea6
+      - ElementName: Music
+        ObjectType: 3
+        guid: 68401ef4233e414b8e4bde88a5577818
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsetps_Switch
       guid: 05f8381a01669a4aa24dd9ee76810acc
       id: 792199384
@@ -130,6 +147,23 @@ MonoBehaviour:
       maxAttenuation: 25
       maxDuration: 0.477912
       minDuration: 0.365286
+    - name: Play_GotItem
+      guid: de3d4167b22c324fb31f04868ad8ce87
+      id: 3215464965
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caca1a3f0ca7774690031251283daea6
+      - ElementName: Play_GotItem
+        ObjectType: 3
+        guid: de3d4167b22c324fb31f04868ad8ce87
+      Path: Events\Default Work Unit\Play_GotItem
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +204,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 3577158ab0ece646ab6f41d54f4bf720
     GuidInternal: 
-    m_lastTime: -8585392996770526174
+    m_lastTime: -8585392031436313734
     List:
     - name: FootstepSwitch
       guid: 58138f1adcacd243a64a257e0d433d72
@@ -222,6 +256,56 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: MusicSwitch
+      guid: f39ea21e0ad9c449bc659a55fb6730e8
+      id: 1445037870
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3577158ab0ece646ab6f41d54f4bf720
+      - ElementName: MusicSwitch
+        ObjectType: 11
+        guid: f39ea21e0ad9c449bc659a55fb6730e8
+      Path: Switches\Default Work Unit\MusicSwitch
+      values:
+      - name: Chase
+        guid: 7b1a69c5c5f2ef4a98a49266a7dd957f
+        id: 417490929
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3577158ab0ece646ab6f41d54f4bf720
+        - ElementName: MusicSwitch
+          ObjectType: 11
+          guid: f39ea21e0ad9c449bc659a55fb6730e8
+        - ElementName: Chase
+          ObjectType: 10
+          guid: 7b1a69c5c5f2ef4a98a49266a7dd957f
+      - name: Normal
+        guid: 92a5c2a88e154d48abbe5e121c45e90f
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3577158ab0ece646ab6f41d54f4bf720
+        - ElementName: MusicSwitch
+          ObjectType: 11
+          guid: f39ea21e0ad9c449bc659a55fb6730e8
+        - ElementName: Normal
+          ObjectType: 10
+          guid: 92a5c2a88e154d48abbe5e121c45e90f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -236,8 +320,35 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585393559002186469
     List: []
+  - PhysicalPath: Triggers\Music.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 553b74cac9d9ba4cbf3c822bed2a3311
+    ParentPath: Triggers\Music
+    guid: 553b74cac9d9ba4cbf3c822bed2a3311
+    GuidInternal: 
+    m_lastTime: -8585392031436112395
+    List:
+    - name: Cymbal_Swell
+      guid: 8b7c6583cc695c41a1bf85937411e040
+      id: 2077047193
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 553b74cac9d9ba4cbf3c822bed2a3311
+      - ElementName: Cymbal_Swell
+        ObjectType: 14
+        guid: 8b7c6583cc695c41a1bf85937411e040
+      Path: Triggers\Music\Cymbal_Swell
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000400000005000000060000000700000008000000090000000b0000000c0000000f0000001000000011000000140000001500000016000000
+  ExpandedWaapiItemIds: 010000000400000005000000060000000700000008000000090000000b0000000c0000000f00000010000000110000001400000015000000160000001f00000020000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

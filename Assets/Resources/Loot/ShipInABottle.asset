@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootName: Ship In a Bottle
   value: 5
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: ddb661efe07d9a645b17ddc493b32f36, type: 3}
   itemObject: {fileID: 0}

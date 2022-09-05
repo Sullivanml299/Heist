@@ -14,7 +14,7 @@ public enum GUARD_STATES{
 public class MoveTo : NetworkBehaviour {
 
     public Transform[] patrolRoute;
-
+    public MusicController musicController;
 
     public GameObject currentTarget;
     public float walkSpeed = 6f;
@@ -47,6 +47,7 @@ public class MoveTo : NetworkBehaviour {
    
 
     void Start () {
+        if(musicController == null) musicController = GameObject.Find("MusicController").GetComponent<MusicController>();
         agent = GetComponent<NavMeshAgent>();
         SetTarget(patrolRoute[patrolIndex]);//targetDestination = patrolRoute[patrolIndex];
         setSpeed(walkSpeed);
@@ -82,10 +83,12 @@ public class MoveTo : NetworkBehaviour {
         switch(newState){
             case GUARD_STATES.Patrolling:
                 setSpeed(walkSpeed);
+                musicController.setChaseState(false); //TODO: this sets the chase music no matter what
                 break;
             
             case GUARD_STATES.Chasing:
                 setSpeed(runSpeed);
+                musicController.setChaseState(true);
                 break;
         }
     }

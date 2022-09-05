@@ -507,6 +507,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a4f1ec87fed63434784f6e7034e457f1, type: 2}
+  gotItemSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ac8f92bceda72fa4fb6de0c7ab98d166, type: 2}
 --- !u!114 &-4660801272573380548
 MonoBehaviour:
   m_ObjectHideFlags: 0

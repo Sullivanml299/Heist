@@ -20,6 +20,9 @@ public class UIController : MonoBehaviour
     public Image hostIcon;
     public Image clientIcon;
 
+    [Header("Audio")]
+    public UIAudioController audioController;
+
 
     private int activeNotificationCount = 0;
 
@@ -36,6 +39,8 @@ public class UIController : MonoBehaviour
         newNotification.setStackPosition(index);
         newNotification.mainUI = this;
         activeNotificationCount++;
+
+        audioController.GotItem();
     }
 
     public void NotificationDestroyed(){

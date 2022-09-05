@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PocketWatch
   m_EditorClassIdentifier: 
   lootName: Pocket Watch
-  value: 30
+  value: 10
   itemIcon: {fileID: 21300000, guid: 9285651df72115f468bf7082166691b3, type: 3}
   itemObject: {fileID: 0}

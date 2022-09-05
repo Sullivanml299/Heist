@@ -55,7 +55,7 @@ public class Notification : MonoBehaviour
     }
 
     void OnDestroy(){
-        print("Destroy");
+        // print("Destroy");
         mainUI.NotificationDestroyed();
     }
 }
