@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootName: Pearl Neckalce
   value: 30
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: 5e685bb792cfe8a4dbe60b66edeea257, type: 3}
   itemObject: {fileID: 0}

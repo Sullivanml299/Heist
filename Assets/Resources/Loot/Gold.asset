@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d42f50abbe031f4ab3dd0c4edc5c332, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
-  lootName: Gold
+  lootName: Gold Coin
   value: 1
-  itemIcon: {fileID: 21300000, guid: 9285651df72115f468bf7082166691b3, type: 3}
+  itemIcon: {fileID: 21300000, guid: 891f99ce79732de4f8d75bebd246d6a9, type: 3}
   itemObject: {fileID: 0}
